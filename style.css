@@ -104,9 +104,9 @@ img {
 }
 .facetime{
 	position: absolute;
-	top: 2%;
-	left: -30%;
-	height: 100%;
+	top: 1%;
+	left: 0%;
+	height: 60%;
 	box-shadow: 4px 4px 4px 4px rgba(50, 50, 50, .1);
 	opacity: 0.2;
 }
