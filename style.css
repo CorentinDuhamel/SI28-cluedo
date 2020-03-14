@@ -48,6 +48,7 @@ img {
 	width: 60%;
 	height: 80%;
 	display: none;
+	overflow: hidden;
 }
 .closefb {
 	position: absolute;
@@ -147,9 +148,9 @@ a.dock-item2 {
 #camera, #camera--view, #camera--sensor, #camera--output{
     position: absolute;
     top: 0.6%;
-    left: 18.9%;
+    left: 0.9%;
     height: 94.4%;
-    width: 70.4%;
+    width: 90.4%;
     z-index: 99999;
 }
 
