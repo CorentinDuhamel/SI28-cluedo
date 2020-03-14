@@ -18,10 +18,8 @@ img {
 	left: 32.2%;
 	height: 97.9%;
 	width: 54.3%;
-	background-color: red;
 	overflow: hidden;
 	z-index: 3;
-	opacity: 0.7;
 }
 .header {
 	position: absolute;
@@ -158,8 +156,8 @@ a.dock-item2 {
 #camera, #camera--view, #camera--sensor, #camera--output{
     position: absolute;
     top: 0%;
-    left: -20%;
-    height: 100%;
+    left: -40%;
+    height: 140%;
     z-index: 99999;
 }
 
