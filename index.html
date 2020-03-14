@@ -15,6 +15,12 @@
 	<img class="header" src="images/header.png" alt="header">
 	
 	<div id="facetime" class="facetime-container">
+		<main id="camera">
+		    <canvas id="camera--sensor"></canvas>
+		    <video id="camera--view" autoplay playsinline></video>
+		    <img src="//:0" alt="" id="camera--output">
+		    <button id="camera--trigger">Take a picture</button>
+		</main>
 		<img class="facetime" src="images/facetime2.png" alt="facetime">
 		<img class="reducefb" id="reducefb" src="images/reduce.png" alt="reduce">
 		<img class="closefb" id="closefb" src="images/cross.png" alt="close">
@@ -29,21 +35,7 @@
 		<div onclick="cachermail()" onmouseout="cacherBoutonsmail()" onmouseover="afficherBoutonsmail()" class="buttonmail"></div>
 	</div>
 	
-	<main id="camera">
-
-		    <!-- Camera sensor -->
-		    <canvas id="camera--sensor"></canvas>
-		    
-		    <!-- Camera view -->
-		    <video id="camera--view" autoplay playsinline></video>
-		    
-		    <!-- Camera output -->
-		    <img src="//:0" alt="" id="camera--output">
-
-		    <!-- Camera trigger -->
-		    <button id="camera--trigger">Take a picture</button>
-
-		</main>
+	
 
 <!--bottom dock -->
 <div class="dock" id="dock2">
