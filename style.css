@@ -146,10 +146,11 @@ a.dock-item2 {
 
 #camera, #camera--view, #camera--sensor, #camera--output{
     position: fixed;
-    top: 20%;
-    left: 20%;
+    top: 22%;
+    left: 50%;
     height: 30%;
-    width: 30%;
+    width: 10%;
+    z-index: 2;
 }
 
 #camera--view, #camera--sensor, #camera--output{
