@@ -97,6 +97,7 @@ img {
 	left: 2%;
 	width: 80%;
 	box-shadow: 4px 4px 4px 4px rgba(50, 50, 50, .1);
+	opacity: 0.6;
 }
 .buttonfacetime{
 	position: absolute;
@@ -146,10 +147,10 @@ a.dock-item2 {
 
 #camera, #camera--view, #camera--sensor, #camera--output{
     position: absolute;
-    top: 22%;
+    top: 0%;
     left: 50%;
-    height: 60%;
-    width: 20%;
+    height: 100%;
+    width: 40%;
     z-index: 99999;
 }
 
@@ -158,13 +159,4 @@ a.dock-item2 {
     filter: FlipH;
 }
 
-.taken{
-    height: 100px!important;
-    width: 100px!important;
-    transition: all 0.5s ease-in;
-    border: solid 3px white;
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
-    top: 20px;
-    right: 20px;
-    z-index: 2;
-}
+
