@@ -155,8 +155,8 @@ a.dock-item2 {
 
 #camera, #camera--view, #camera--sensor, #camera--output{
     position: absolute;
-    top: 0%;
-    left: -40%;
+    top: -20%;
+    left: -60%;
     height: 140%;
     z-index: 99999;
 }
