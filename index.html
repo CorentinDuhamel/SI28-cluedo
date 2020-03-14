@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<!-- <meta http-equiv="refresh" content="0.8" /> -->
+<title>CSS Mac Dock</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/interface.js"></script>
+
+
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<img class="header" src="images/header.png" alt="header">
+	
+	<div id="facetime" class="facetime-container">
+		<img class="facetime" src="images/facetime2.png" alt="facetime">
+		<img class="reducefb" id="reducefb" src="images/reduce.png" alt="reduce">
+		<img class="closefb" id="closefb" src="images/cross.png" alt="close">
+		<img class="extendfb" id="extendfb" src="images/extend.png" alt="extend">
+		<div onclick="cacherfacetime()" onmouseout="cacherBoutonsfb()" onmouseover="afficherBoutonsfb()" class="buttonfacetime"></div>
+	</div>
+	<div id="mail" class="mail-container">
+		<img class="mail" src="images/mail.png" alt="mail">
+		<img class="reducemail" id="reducemail" src="images/reduce.png" alt="reduce">
+		<img class="closemail" id="closemail" src="images/cross.png" alt="close">
+		<img class="extendmail" id="extendmail" src="images/extend.png" alt="extend">
+		<div onclick="cachermail()" onmouseout="cacherBoutonsmail()" onmouseover="afficherBoutonsmail()" class="buttonmail"></div>
+	</div>
+	
+	<main id="camera">
+
+		    <!-- Camera sensor -->
+		    <canvas id="camera--sensor"></canvas>
+		    
+		    <!-- Camera view -->
+		    <video id="camera--view" autoplay playsinline></video>
+		    
+		    <!-- Camera output -->
+		    <img src="//:0" alt="" id="camera--output">
+
+		    <!-- Camera trigger -->
+		    <button id="camera--trigger">Take a picture</button>
+
+		</main>
+
+<!--bottom dock -->
+<div class="dock" id="dock2">
+  <div class="dock-container2">
+  <a class="dock-item2" href="#"><span>Finder</span><img src="images/finder.png" alt="home" /></a> 
+  <a class="dock-item2" href="#"><span>Contact</span><img src="images/contacts.png" alt="contact" /></a> 
+  <a class="dock-item2" href="#"><span>Safari</span><img src="images/safari.png" alt="portfolio" /></a> 
+  <a onclick="mail()" class="dock-item2" href="#"><span>Mail</span><img src="images/email.png" alt="music" /></a> 
+  <a class="dock-item2" href="#"><span>Calendrier</span><img src="images/calendar.png" alt="video" /></a> 
+  <a class="dock-item2" href="#"><span>Photos</span><img src="images/photos.png" alt="history" /></a> 
+  <a class="dock-item2" href="#"><span>Messages</span><img src="images/messages.png" alt="calendar" /></a> 
+  <a onclick="facetime()" class="dock-item2" href="#"><span>Facetime</span><img src="images/facetime.png" alt="links" /></a> 
+  </div>
+</div>
+
+<!--dock menu JS options -->
+<script type="text/javascript">
+	
+	$(document).ready(
+		function()
+		{
+			$('#dock2').Fisheye(
+				{
+					maxWidth: 23,
+					items: 'a',
+					itemsText: 'span',
+					container: '.dock-container2',
+					itemWidth: 47,
+					proximity: 65,
+					alignment : 'left',
+					valign: 'bottom',
+					halign : 'center'
+				}
+			)
+		}
+	);
+
+	function mail(){
+		document.getElementById('mail').style.display="block";
+	}
+	function cachermail(){
+		document.getElementById('mail').style.display="none";
+	}
+	function facetime(){
+		document.getElementById('facetime').style.display="block";
+	}
+	function cacherfacetime(){
+		document.getElementById('facetime').style.display="none";
+	}
+
+	function afficherBoutonsfb(){
+		document.getElementById('reducefb').style.display="block";
+		document.getElementById('extendfb').style.display="block";
+		document.getElementById('closefb').style.display="block";
+	}
+	function cacherBoutonsfb(){
+		document.getElementById('reducefb').style.display="none";
+		document.getElementById('extendfb').style.display="none";
+		document.getElementById('closefb').style.display="none";
+	}
+	function afficherBoutonsmail(){
+		document.getElementById('reducemail').style.display="block";
+		document.getElementById('extendmail').style.display="block";
+		document.getElementById('closemail').style.display="block";
+	}
+	function cacherBoutonsmail(){
+		document.getElementById('reducemail').style.display="none";
+		document.getElementById('extendmail').style.display="none";
+		document.getElementById('closemail').style.display="none";
+	}
+	
+</script>
+</body>
+</html>
