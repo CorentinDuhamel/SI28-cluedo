@@ -97,7 +97,6 @@ img {
 	left: 2%;
 	width: 80%;
 	box-shadow: 4px 4px 4px 4px rgba(50, 50, 50, .1);
-	opacity: 0.6;
 }
 .buttonfacetime{
 	position: absolute;
@@ -147,10 +146,10 @@ a.dock-item2 {
 
 #camera, #camera--view, #camera--sensor, #camera--output{
     position: absolute;
-    top: 0%;
-    left: 50%;
-    height: 100%;
-    width: 40%;
+    top: 4%;
+    left: 30%;
+    height: 92%;
+    width: 90%;
     z-index: 99999;
 }
 
