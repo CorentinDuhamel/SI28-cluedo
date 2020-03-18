@@ -28,12 +28,21 @@
 		<img class="extendfb" id="extendfb" src="images/extend.png" alt="extend">
 		<div onclick="cacherfacetime()" onmouseout="cacherBoutonsfb()" onmouseover="afficherBoutonsfb()" class="buttonfacetime"></div>
 	</div>
+
 	<div id="mail" class="mail-container">
 		<img class="mail" src="images/mail.png" alt="mail">
 		<img class="reducemail" id="reducemail" src="images/reduce.png" alt="reduce">
 		<img class="closemail" id="closemail" src="images/cross.png" alt="close">
 		<img class="extendmail" id="extendmail" src="images/extend.png" alt="extend">
 		<div onclick="cachermail()" onmouseout="cacherBoutonsmail()" onmouseover="afficherBoutonsmail()" class="buttonmail"></div>
+	</div>
+
+	<div id="message" class="message-container">
+		<img class="message" src="images/messages2.png" alt="message">
+		<img class="reducemessage" id="reducemessage" src="images/reduce.png" alt="reduce">
+		<img class="closemessage" id="closemessage" src="images/cross.png" alt="close">
+		<img class="extendmessage" id="extendmessage" src="images/extend.png" alt="extend">
+		<div onclick="cachermessage()" onmouseout="cacherBoutonsmessage()" onmouseover="afficherBoutonsmessage()" class="buttonmessage"></div>
 	</div>
 	
 	
@@ -47,7 +56,7 @@
   <a onclick="mail()" class="dock-item2" href="#"><span>Mail</span><img src="images/email.png" alt="music" /></a> 
   <a class="dock-item2" href="#"><span>Calendrier</span><img src="images/calendar.png" alt="video" /></a> 
   <a class="dock-item2" href="#"><span>Photos</span><img src="images/photos.png" alt="history" /></a> 
-  <a class="dock-item2" href="#"><span>Messages</span><img src="images/messages.png" alt="calendar" /></a> 
+  <a onclick="message()" class="dock-item2" href="#"><span>Messages</span><img src="images/messages.png" alt="calendar" /></a> 
   <a onclick="facetime()" class="dock-item2" href="#"><span>Facetime</span><img src="images/facetime.png" alt="links" /></a> 
   </div>
 </div>
@@ -86,6 +95,12 @@
 	function cacherfacetime(){
 		document.getElementById('facetime').style.display="none";
 	}
+	function message(){
+		document.getElementById('message').style.display="block";
+	}
+	function cachermessage(){
+		document.getElementById('message').style.display="none";
+	}
 
 	function afficherBoutonsfb(){
 		document.getElementById('reducefb').style.display="block";
@@ -96,6 +111,16 @@
 		document.getElementById('reducefb').style.display="none";
 		document.getElementById('extendfb').style.display="none";
 		document.getElementById('closefb').style.display="none";
+	}
+	function afficherBoutonsmessage(){
+		document.getElementById('reducemessage').style.display="block";
+		document.getElementById('extendmessage').style.display="block";
+		document.getElementById('closemessage').style.display="block";
+	}
+	function cacherBoutonsmessage(){
+		document.getElementById('reducemessage').style.display="none";
+		document.getElementById('extendmessage').style.display="none";
+		document.getElementById('closemessage').style.display="none";
 	}
 	function afficherBoutonsmail(){
 		document.getElementById('reducemail').style.display="block";
