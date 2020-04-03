@@ -1,0 +1,475 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type"/>
+<meta charset="utf-8">
+<!-- <meta http-equiv="refresh" content="0.8" /> -->
+<title>CSS Mac Dock</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/interface.js"></script>
+
+
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload="displaybutton()">
+	<div id="intro" class="intro">
+		<div class="type-js headline">
+		<h1 class="text-js">Ma sœur a disparu. Depuis plusieurs semaines, plus personne n’a de nouvelles d’elle.
+		L’enquête de la police n’avance pas et le mystère de sa disparition demeure : Pourquoi a-t-elle disparu ? 
+		Où peut-elle donc bien être ?
+		Est-ce qu’elle va bien ? 
+		Alors que de nombreuses questions restent en suspens, un colis arrive un jour chez moi. Aucun expéditeur n’est indiqué. A l’intérieur, je découvre un ordinateur, l’ordinateur de ma sœur ! Attend-t-elle quelque chose de moi ? Que je résolve moi-même l’énigme de sa disparition ? Pour cela, il ne reste qu’une chose à faire : fouiller l’ordinateur…  
+		</h1>
+		</div>
+		<input type="button" id="startgame" class="startgame" onclick="startgame()" value="Mener l'enquête">
+	</div>
+	<img class="header" src="images/header.png" alt="header">
+	
+	<div id="facetime" class="facetime-container">
+		<div class="cam">
+			<main id="camera">
+			    <canvas id="camera--sensor"></canvas>
+			    <video id="camera--view" autoplay playsinline></video>
+			    <img src="//:0" alt="" id="camera--output">
+			</main>
+		</div>
+		<img class="facetime" src="images/facetime2.png" alt="facetime">
+		<img class="reducefb" id="reducefb" src="images/reduce.png" alt="reduce">
+		<img class="closefb" id="closefb" src="images/cross.png" alt="close">
+		<img class="extendfb" id="extendfb" src="images/extend.png" alt="extend">
+		<div onclick="cacherfacetime()" onmouseout="cacherBoutonsfb()" onmouseover="afficherBoutonsfb()" class="buttonfacetime"></div>
+	</div>
+
+	<div id="mail" class="mail-container">
+		<img class="mail" src="images/mail.png" alt="mail">
+		<img class="reducemail" id="reducemail" src="images/reduce.png" alt="reduce">
+		<img class="closemail" id="closemail" src="images/cross.png" alt="close">
+		<img class="extendmail" id="extendmail" src="images/extend.png" alt="extend">
+		<div onclick="cachermail()" onmouseout="cacherBoutonsmail()" onmouseover="afficherBoutonsmail()" class="buttonmail"></div>
+	</div>
+
+	<div id="message" class="message-container">
+		<img class="message" src="images/messages2.png" alt="message">
+		<div id="message1" class="message1" onclick="couleurmessage(),message1()"></div>
+		<div id="message2" class="message2" onclick="couleurmessage(),message2()"></div>
+		<div id="message3" class="message3" onclick="couleurmessage(),message3()"></div>
+		<div id="message4" class="message4" onclick="couleurmessage(),message4()"></div>
+		<div id="message5" class="message5" onclick="couleurmessage(),message5()"></div>
+		<div id="message6" class="message6" onclick="couleurmessage(),message6()"></div>
+		<div id="message7" class="message7" onclick="couleurmessage(),message7()"></div>
+		<div id="message8" class="message8" onclick="couleurmessage(),message8()"></div>
+		<div id="message9" class="message9" onclick="couleurmessage(),message9()"></div>
+		<div id="message10" class="message10" onclick="couleurmessage(), message10()"></div>
+		<img class="reducemessage" id="reducemessage" src="images/reduce.png" alt="reduce">
+		<img class="closemessage" id="closemessage" src="images/cross.png" alt="close">
+		<img class="extendmessage" id="extendmessage" src="images/extend.png" alt="extend">
+		<div id="contenumessage1" class="contenumessage">
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messagerecu">reggrjke</div>
+			<div class="messageenvoye">erberberberbe </div>
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">regergergergregrgrjke</div> 
+			<div class="messagerecu">reggrjke</div>
+			<div class="messagerecu">rt trvvgfdg </div>
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">evgregvzerczecgrcg</div>
+			<div class="messagerecu">reggrjke</div>
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">reggrjke</div>
+			<div class="messagerecu">reggrjke</div>
+		</div> 
+		<div id="contenumessage2" class="contenumessage">
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">thbrbhbvcr vgrevgre rtvrvg</div> 
+			<div class="messagerecu">reggrjke</div>
+			<div class="messageenvoye">erberberberbe </div>
+			<div class="messageenvoye">trgvretgv tvzrvge</div> 
+			<div class="messageenvoye">regergergergregrgrjke</div> 
+			<div class="messagerecu">reggrjke</div>
+			<div class="messagerecu">rt trvvgfdg </div>
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">rtvhrbveb</div>
+			<div class="messagerecu">reggrjke</div>
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">reggrjke</div>
+			<div class="messagerecu">reggrjke</div>
+		</div> 
+		<div id="contenumessage3" class="contenumessage">
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messagerecu">reggrjke</div>
+			<div class="messageenvoye">erberberberbe </div>
+			<div class="messageenvoye">rthber hertger</div> 
+			<div class="messageenvoye">regergergergregrgrjke</div> 
+			<div class="messagerecu">reggrjke</div>
+			<div class="messagerecu">rt trvvgfdg </div>
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">erg</div>
+			<div class="messagerecu">reggrjke</div>
+			<div class="messageenvoye">ergergerg rvgrev</div> 
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">reggrjke</div>
+			<div class="messagerecu">reggrjke</div>
+		</div> 
+		<div id="contenumessage4" class="contenumessage">
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">gregergerg</div> 
+			<div class="messagerecu">ergergergerg</div>
+			<div class="messageenvoye">erberberberbe </div>
+			<div class="messageenvoye">regergergergerggrjke</div> 
+			<div class="messageenvoye">regergergergregrgrjke</div> 
+			<div class="messagerecu">reggrjke</div>
+			<div class="messagerecu">rt trvvgfdg </div>
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">evgregvzerczecgrcg</div>
+			<div class="messagerecu">reggrjke</div>
+			<div class="messageenvoye">ergergergerg</div> 
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">reggrjke</div>
+			<div class="messagerecu">reggrjke</div>
+		</div> 
+		<div id="contenumessage5" class="contenumessage">
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messagerecu">reggrjke</div>
+			<div class="messageenvoye">erberberberbe </div>
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">rtgvgrev. rgvzreve rvcgvzec</div> 
+			<div class="messagerecu">reggrjke</div>
+			<div class="messagerecu">rt trvvgfdg </div>
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">evgregvzerczecgrcg</div>
+			<div class="messagerecu">reggrjke</div>
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">reggrjke</div>
+			<div class="messagerecu">reggrjke</div>
+		</div> 
+		<div id="contenumessage6" class="contenumessage">
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messagerecu">reggrjke</div>
+			<div class="messageenvoye">erberberberbe </div>
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">regergergergregrgrjke</div> 
+			<div class="messagerecu">reggrjke</div>
+			<div class="messagerecu">rt trvvgfdg </div>
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">evgregvzerczecgrcg</div>
+			<div class="messagerecu">reggrjke</div>
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">reggrjke</div>
+			<div class="messagerecu">reggrjke</div>
+		</div> 
+		<div id="contenumessage7" class="contenumessage">
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messagerecu">reggrjke</div>
+			<div class="messageenvoye">erberberberbe </div>
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">regergergergregrgrjke</div> 
+			<div class="messagerecu">reggrjke</div>
+			<div class="messagerecu">rt trvvgfdg </div>
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">evgregvzerczecgrcg</div>
+			<div class="messagerecu">reggrjke</div>
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">reggrjke</div>
+			<div class="messagerecu">reggrjke</div>
+		</div> 
+		<div id="contenumessage8" class="contenumessage">
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messagerecu">reggrjke</div>
+			<div class="messageenvoye">erberberberbe </div>
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">regergergergregrgrjke</div> 
+			<div class="messagerecu">reggrjke</div>
+			<div class="messagerecu">rt trvvgfdg </div>
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">evgregvzerczecgrcg</div>
+			<div class="messagerecu">reggrjke</div>
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">reggrjke</div>
+			<div class="messagerecu">ytbhr rtbhebrh etrherbvtr v</div>
+		</div> 
+		<div id="contenumessage9" class="contenumessage">
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messagerecu">reggrjke</div>
+			<div class="messageenvoye">erberberberbe </div>
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">regergergergregrgrjke</div> 
+			<div class="messagerecu">reggrjke</div>
+			<div class="messagerecu">rt trvvgfdg </div>
+			<div class="messageenvoye">trhbr retbherb</div> 
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">evgregvzerczecgrcg</div>
+			<div class="messagerecu">trvrt tvgrev</div>
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">rtbvretgretv revgervg rtvrevr rvger</div> 
+			<div class="messageenvoye">reggrjke</div>
+			<div class="messagerecu">reggrjke</div>
+		</div>
+		<div id="contenumessage10" class="contenumessage">
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messagerecu">reggrjke</div>
+			<div class="messageenvoye">erberberberbe </div>
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">regergergergregrgrjke</div> 
+			<div class="messagerecu">reggrjke</div>
+			<div class="messagerecu">rt trvvgfdg </div>
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">reggrjke</div> 
+			<div class="messageenvoye">evgregvzerczecgrcg</div>
+			<div class="messagerecu">trvgretvg ertgvevcgre</div>
+			<div class="messageenvoye">trgvretgv trvgevrgv rvgervc</div> 
+			<div class="messageenvoye">regtvret grjke</div> 
+			<div class="messageenvoye">rtgvretvgrevrt revzrev</div>
+			<div class="messagerecu">reggrjke</div>
+		</div>  
+		<div onclick="cachermessage()" onmouseout="cacherBoutonsmessage()" onmouseover="afficherBoutonsmessage()" class="buttonmessage"></div>
+	</div>
+	
+	
+
+<!--bottom dock -->
+<div class="dock" id="dock2">
+  <div class="dock-container2">
+  <a class="dock-item2" href="#"><span>Finder</span><img src="images/finder.png" alt="home" /></a> 
+  <a class="dock-item2" href="#"><span>Contact</span><img src="images/contacts.png" alt="contact" /></a> 
+  <a class="dock-item2" href="#"><span>Safari</span><img src="images/safari.png" alt="portfolio" /></a> 
+  <a onclick="mail()" class="dock-item2" href="#"><span>Mail</span><img src="images/email.png" alt="music" /></a> 
+  <a class="dock-item2" href="#"><span>Calendrier</span><img src="images/calendar.png" alt="video" /></a> 
+  <a class="dock-item2" href="#"><span>Photos</span><img src="images/photos.png" alt="history" /></a> 
+  <a onclick="message()" class="dock-item2" href="#"><span>Messages</span><img src="images/messages.png" alt="calendar" /></a> 
+  <a onclick="facetime()" class="dock-item2" href="#"><span>Facetime</span><img src="images/facetime.png" alt="links" /></a> 
+  </div>
+</div>
+
+<!--dock menu JS options -->
+<script type="text/javascript">
+	
+	$(document).ready(
+		function()
+		{
+			$('#dock2').Fisheye(
+				{
+					maxWidth: 23,
+					items: 'a',
+					itemsText: 'span',
+					container: '.dock-container2',
+					itemWidth: 47,
+					proximity: 65,
+					alignment : 'left',
+					valign: 'bottom',
+					halign : 'center'
+				}
+			)
+		}
+	);
+
+	function couleurmessage(){
+		document.getElementById('message1').style.backgroundColor="#353f4a";
+		document.getElementById('message2').style.backgroundColor="#353f4a";
+		document.getElementById('message3').style.backgroundColor="#353f4a";
+		document.getElementById('message4').style.backgroundColor="#353f4a";
+		document.getElementById('message5').style.backgroundColor="#353f4a";
+		document.getElementById('message6').style.backgroundColor="#353f4a";
+		document.getElementById('message7').style.backgroundColor="#353f4a";
+		document.getElementById('message8').style.backgroundColor="#353f4a";
+		document.getElementById('message9').style.backgroundColor="#353f4a";
+		document.getElementById('message10').style.backgroundColor="#353f4a";
+
+		document.getElementById('contenumessage1').style.display="none";
+		document.getElementById('contenumessage2').style.display="none";
+		document.getElementById('contenumessage3').style.display="none";
+		document.getElementById('contenumessage4').style.display="none";
+		document.getElementById('contenumessage5').style.display="none";
+		document.getElementById('contenumessage6').style.display="none";
+		document.getElementById('contenumessage7').style.display="none";
+		document.getElementById('contenumessage8').style.display="none";
+		document.getElementById('contenumessage9').style.display="none";
+		document.getElementById('contenumessage10').style.display="none";
+	}
+	function message1(){
+		document.getElementById('message1').style.backgroundColor="#0068e1";
+		document.getElementById('contenumessage1').style.display="block";
+	}
+	function message2(){
+		document.getElementById('message2').style.backgroundColor="#0068e1";
+		document.getElementById('contenumessage2').style.display="block";
+	}
+	function message3(){
+		document.getElementById('message3').style.backgroundColor="#0068e1";
+		document.getElementById('contenumessage3').style.display="block";
+	}
+	function message4(){
+		document.getElementById('message4').style.backgroundColor="#0068e1";
+		document.getElementById('contenumessage4').style.display="block";
+	}
+	function message5(){
+		document.getElementById('message5').style.backgroundColor="#0068e1";
+		document.getElementById('contenumessage5').style.display="block";
+	}
+	function message6(){
+		document.getElementById('message6').style.backgroundColor="#0068e1";
+		document.getElementById('contenumessage6').style.display="block";
+	}
+	function message7(){
+		document.getElementById('message7').style.backgroundColor="#0068e1";
+		document.getElementById('contenumessage7').style.display="block";
+	}
+	function message8(){
+		document.getElementById('message8').style.backgroundColor="#0068e1";
+		document.getElementById('contenumessage8').style.display="block";
+	}
+	function message9(){
+		document.getElementById('message9').style.backgroundColor="#0068e1";
+		document.getElementById('contenumessage9').style.display="block";
+	}
+	function message10(){
+		document.getElementById('message10').style.backgroundColor="#0068e1";
+		document.getElementById('contenumessage10').style.display="block";
+	}
+
+	function mail(){
+		document.getElementById('mail').style.display="block";
+	}
+	function cachermail(){
+		document.getElementById('mail').style.display="none";
+	}
+	function facetime(){
+		document.getElementById('facetime').style.display="block";
+	}
+	function cacherfacetime(){
+		document.getElementById('facetime').style.display="none";
+	}
+	function message(){
+		document.getElementById('message').style.display="block";
+	}
+	function cachermessage(){
+		document.getElementById('message').style.display="none";
+	}
+
+	function afficherBoutonsfb(){
+		document.getElementById('reducefb').style.display="block";
+		document.getElementById('extendfb').style.display="block";
+		document.getElementById('closefb').style.display="block";
+	}
+	function cacherBoutonsfb(){
+		document.getElementById('reducefb').style.display="none";
+		document.getElementById('extendfb').style.display="none";
+		document.getElementById('closefb').style.display="none";
+	}
+	function afficherBoutonsmessage(){
+		document.getElementById('reducemessage').style.display="block";
+		document.getElementById('extendmessage').style.display="block";
+		document.getElementById('closemessage').style.display="block";
+	}
+	function cacherBoutonsmessage(){
+		document.getElementById('reducemessage').style.display="none";
+		document.getElementById('extendmessage').style.display="none";
+		document.getElementById('closemessage').style.display="none";
+	}
+	function afficherBoutonsmail(){
+		document.getElementById('reducemail').style.display="block";
+		document.getElementById('extendmail').style.display="block";
+		document.getElementById('closemail').style.display="block";
+	}
+	function cacherBoutonsmail(){
+		document.getElementById('reducemail').style.display="none";
+		document.getElementById('extendmail').style.display="none";
+		document.getElementById('closemail').style.display="none";
+	}
+
+	function displaybutton(){
+		// setTimeout(function (){
+		document.getElementById('startgame').style.display="block";
+		// }, 53000); // How long do you want the delay to be (in milliseconds)? 
+	}
+	function startgame(){
+		document.getElementById('intro').style.display="none";
+	}
+	
+	// Set constraints for the video stream
+var constraints = { video: { facingMode: "user" }, audio: false };
+var track = null;
+
+// Define constants
+const cameraView = document.querySelector("#camera--view"),
+    cameraOutput = document.querySelector("#camera--output"),
+    cameraSensor = document.querySelector("#camera--sensor"),
+    cameraTrigger = document.querySelector("#camera--trigger");
+
+// Access the device camera and stream to cameraView
+function cameraStart() {
+    navigator.mediaDevices
+        .getUserMedia(constraints)
+        .then(function(stream) {
+            track = stream.getTracks()[0];
+            cameraView.srcObject = stream;
+        })
+        .catch(function(error) {
+            console.error("Oops. Something is broken.", error);
+        });
+}
+
+
+
+// Start the video stream when the window loads
+window.addEventListener("load", cameraStart, false);
+
+
+
+
+function autoType(elementClass, typingSpeed){
+  var thhis = $(elementClass);
+  thhis.css({
+    "position": "relative",
+    "display": "inline-block"
+  });
+  thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+  thhis = thhis.find(".text-js");
+  var text = thhis.text().trim().split('');
+  var amntOfChars = text.length;
+  var newString = "";
+  thhis.text("|");
+  setTimeout(function(){
+    thhis.css("opacity",1);
+    thhis.prev().removeAttr("style");
+    thhis.text("");
+    for(var i = 0; i < amntOfChars; i++){
+      (function(i,char){
+        setTimeout(function() {        
+          newString += char;
+          thhis.text(newString);
+        },i*typingSpeed);
+      })(i+1,text[i]);
+    }
+  },1500);
+}
+
+$(document).ready(function(){
+  autoType(".type-js",100);
+});
+
+</script>
+</body>
+</html>
