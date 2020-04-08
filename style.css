@@ -281,21 +281,18 @@ img {
 	top: 1.48%;
 	left: -0.1%;
 	width: 2.02%;
-	display: none;
 }
 .reducefb {
 	position: absolute;
 	top: 1.43%;
 	left: 2.4%;
 	width: 2.02%;
-	display: none;
 }
 .extendfb {
 	position: absolute;
 	top: 1.6%;
 	left: 4.97%;
 	width: 2.02%;
-	display: none;
 }
 .closemessage {
 	position: absolute;
