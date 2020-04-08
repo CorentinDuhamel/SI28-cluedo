@@ -409,6 +409,7 @@ img {
 	height: 98%;
 	box-shadow: 4px 4px 4px 4px rgba(50, 50, 50, .1);
 	opacity: 0.9;
+	z-index: 9999;
 }
 .buttonfacetime{
 	position: absolute;
