@@ -28,7 +28,7 @@ function couleurmessage(){
     document.getElementById('message8').style.backgroundColor="#353f4a";
     document.getElementById('message9').style.backgroundColor="#353f4a";
     document.getElementById('message10').style.backgroundColor="#353f4a";
-
+    
     document.getElementById('contenumessage1').style.display="none";
     document.getElementById('contenumessage2').style.display="none";
     document.getElementById('contenumessage3').style.display="none";
@@ -171,9 +171,9 @@ function cacherBoutonsmail(){
 }
 
 function displaybutton(){
-     setTimeout(function (){
-    document.getElementById('startgame').style.display="block";
-     }, 53000); // How long do you want the delay to be (in milliseconds)? 
+    setTimeout(function (){
+        document.getElementById('startgame').style.display="block";
+    }, 53000); // How long do you want the delay to be (in milliseconds)? 
 }
 function startgame(){
     document.getElementById('intro').style.display="none";
@@ -191,7 +191,7 @@ cameraTrigger = document.querySelector("#camera--trigger");
 
 // Access the device camera and stream to cameraView
 function cameraStart() {
-navigator.mediaDevices
+    navigator.mediaDevices
     .getUserMedia(constraints)
     .then(function(stream) {
         track = stream.getTracks()[0];
@@ -203,7 +203,7 @@ navigator.mediaDevices
 }
 
 function element8(){
-document.getElementById('element8').style.display="block";
+    document.getElementById('element8').style.display="block";
 }
 
 // Start the video stream when the window loads
@@ -213,32 +213,32 @@ window.addEventListener("load", cameraStart, false);
 
 
 function autoType(elementClass, typingSpeed){
-var thhis = $(elementClass);
-thhis.css({
-"position": "relative",
-"display": "inline-block"
-});
-thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
-thhis = thhis.find(".text-js");
-var text = thhis.text().trim().split('');
-var amntOfChars = text.length;
-var newString = "";
-thhis.text("|");
-setTimeout(function(){
-thhis.css("opacity",1);
-thhis.prev().removeAttr("style");
-thhis.text("");
-for(var i = 0; i < amntOfChars; i++){
-  (function(i,char){
-    setTimeout(function() {        
-      newString += char;
-      thhis.text(newString);
-    },i*typingSpeed);
-  })(i+1,text[i]);
-}
-},1500);
+    var thhis = $(elementClass);
+    thhis.css({
+        "position": "relative",
+        "display": "inline-block"
+    });
+    thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+    thhis = thhis.find(".text-js");
+    var text = thhis.text().trim().split('');
+    var amntOfChars = text.length;
+    var newString = "";
+    thhis.text("|");
+    setTimeout(function(){
+        thhis.css("opacity",1);
+        thhis.prev().removeAttr("style");
+        thhis.text("");
+        for(var i = 0; i < amntOfChars; i++){
+            (function(i,char){
+                setTimeout(function() {        
+                    newString += char;
+                    thhis.text(newString);
+                },i*typingSpeed);
+            })(i+1,text[i]);
+        }
+    },1500);
 }
 
 $(document).ready(function(){
-autoType(".type-js",100);
+    autoType(".type-js",100);
 });
