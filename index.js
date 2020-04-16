@@ -166,10 +166,12 @@ function cacherBoutonsmail(){
 }
 
 function displaybutton(){
+    $("#startgame").hide()
     setTimeout(function (){
-        document.getElementById('startgame').style.display="block";
+        $("#startgame").show()
     }, 53000); // How long do you want the delay to be (in milliseconds)? 
 }
+
 function startgame(){
     document.getElementById('intro').style.display="none";
 }
