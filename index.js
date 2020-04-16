@@ -23,49 +23,43 @@ function couleurmessage(){
     $('#contenumessage' + n).css("display", "block")
 }
 
+function showPane(pane_name) {
+    pane_list = ['mail', 'safari', 'facetime', 'message', 'photos']
+
+    for (const pane of pane_list) {
+        pane === pane_name ? $("#" + pane).show() : $("#" + pane).hide()
+    }
+}
+
 function mail(){
-    document.getElementById('mail').style.display="block";
-    document.getElementById('safari').style.display="none";
-    document.getElementById('facetime').style.display="none";
-    document.getElementById('message').style.display="none";
-    document.getElementById('photos').style.display="none";
+    showPane("mail")
 }
+
 function photos(){
-    document.getElementById('photos').style.display="block";
-    document.getElementById('mail').style.display="none";
-    document.getElementById('safari').style.display="none";
-    document.getElementById('facetime').style.display="none";
-    document.getElementById('message').style.display="none";
+    showPane("photos")
 }
+
 function safari(){
-    document.getElementById('safari').style.display="block";
-    document.getElementById('mail').style.display="none";
-    document.getElementById('facetime').style.display="none";
-    document.getElementById('message').style.display="none";
-    document.getElementById('photos').style.display="none";
+    showPane("safari")
 }
+
+function facetime(){
+    showPane("facetime")
+}
+
+function message(){
+    showPane("message")
+}
+
+
 function cachermail(){
     document.getElementById('mail').style.display="none";
-}
-function facetime(){
-    document.getElementById('facetime').style.display="block";
-    document.getElementById('safari').style.display="none";
-    document.getElementById('mail').style.display="none";
-    document.getElementById('message').style.display="none";
-    document.getElementById('photos').style.display="none";
 }
 function cacherfacetime(){
     document.getElementById('facetime').style.display="none";
 }
 function cachersafari(){
     document.getElementById('safari').style.display="none";
-}
-function message(){
-    document.getElementById('message').style.display="block";
-    document.getElementById('safari').style.display="none";
-    document.getElementById('facetime').style.display="none";
-    document.getElementById('mail').style.display="none";
-    document.getElementById('photos').style.display="none";
 }
 function cachermessage(){
     document.getElementById('message').style.display="none";
