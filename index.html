@@ -67,16 +67,16 @@
 		
 		<div id="message" class="message-container">
 			<img class="message" src="images/messages2.png" alt="message">
-			<div id="message1" class="message1" onclick="couleurmessage(),message1()"></div>
-			<div id="message2" class="message2" onclick="couleurmessage(),message2()"></div>
-			<div id="message3" class="message3" onclick="couleurmessage(),message3()"></div>
-			<div id="message4" class="message4" onclick="couleurmessage(),message4()"></div>
-			<div id="message5" class="message5" onclick="couleurmessage(),message5()"></div>
-			<div id="message6" class="message6" onclick="couleurmessage(),message6()"></div>
-			<div id="message7" class="message7" onclick="couleurmessage(),message7()"></div>
-			<div id="message8" class="message8" onclick="couleurmessage(),message8()"></div>
-			<div id="message9" class="message9" onclick="couleurmessage(),message9()"></div>
-			<div id="message10" class="message10" onclick="couleurmessage(), message10()"></div>
+			<div id="message1" class="msg message1"></div>
+			<div id="message2" class="msg message2"></div>
+			<div id="message3" class="msg message3"></div>
+			<div id="message4" class="msg message4"></div>
+			<div id="message5" class="msg message5"></div>
+			<div id="message6" class="msg message6"></div>
+			<div id="message7" class="msg message7"></div>
+			<div id="message8" class="msg message8"></div>
+			<div id="message9" class="msg message9"></div>
+			<div id="message10" class="msg message10"></div>
 			<img class="reducemessage" id="reducemessage" src="images/reduce.png" alt="reduce">
 			<img class="closemessage" id="closemessage" src="images/cross.png" alt="close">
 			<img class="extendmessage" id="extendmessage" src="images/extend.png" alt="extend">
@@ -260,9 +260,8 @@
 				<div class="messageenvoye">rtgvretvgrevrt revzrev</div>
 				<div class="messagerecu">reggrjke</div>
 			</div>  
-			<div onclick="cachermessage()" onmouseout="cacherBoutonsmessage()" onmouseover="afficherBoutonsmessage()" class="buttonmessage"></div>
+			<div id="buttonmessage" class="buttonmessage"></div>
 		</div>
-		
 		
 		
 		<!--bottom dock -->
@@ -270,12 +269,12 @@
 			<div class="dock-container2">
 				<a class="dock-item2" href="#"><span>Finder</span><img src="images/finder.png" alt="home" /></a> 
 				<a class="dock-item2" href="#"><span>Contact</span><img src="images/contacts.png" alt="contact" /></a> 
-				<a onclick="safari()" class="dock-item2" href="#"><span>Safari</span><img src="images/safari.png" alt="portfolio" /></a> 
-				<a onclick="mail()" class="dock-item2" href="#"><span>Mail</span><img src="images/email.png" alt="music" /></a> 
+				<a id="safari-dock" class="dock-item2" href="#"><span>Safari</span><img src="images/safari.png" alt="portfolio" /></a> 
+				<a id="mail-dock" class="dock-item2" href="#"><span>Mail</span><img src="images/email.png" alt="music" /></a> 
 				<a class="dock-item2" href="#"><span>Calendrier</span><img src="images/calendar.png" alt="video" /></a> 
-				<a onclick="photos()" class="dock-item2" href="#"><span>Photos</span><img src="images/photos.png" alt="history" /></a> 
-				<a onclick="message()" class="dock-item2" href="#"><span>Messages</span><img src="images/messages.png" alt="calendar" /></a> 
-				<a onclick="facetime()" class="dock-item2" href="#"><span>Facetime</span><img src="images/facetime.png" alt="links" /></a> 
+				<a id="photos-dock" class="dock-item2" href="#"><span>Photos</span><img src="images/photos.png" alt="history" /></a> 
+				<a id="message-dock" class="dock-item2" href="#"><span>Messages</span><img src="images/messages.png" alt="calendar" /></a> 
+				<a id="facetime-dock" class="dock-item2" href="#"><span>Facetime</span><img src="images/facetime.png" alt="links" /></a> 
 			</div>
 		</div>
 		
