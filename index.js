@@ -13,27 +13,10 @@ $(document).ready(function() {
 });
 
 function couleurmessage(){
-    document.getElementById('message1').style.backgroundColor="#353f4a";
-    document.getElementById('message2').style.backgroundColor="#353f4a";
-    document.getElementById('message3').style.backgroundColor="#353f4a";
-    document.getElementById('message4').style.backgroundColor="#353f4a";
-    document.getElementById('message5').style.backgroundColor="#353f4a";
-    document.getElementById('message6').style.backgroundColor="#353f4a";
-    document.getElementById('message7').style.backgroundColor="#353f4a";
-    document.getElementById('message8').style.backgroundColor="#353f4a";
-    document.getElementById('message9').style.backgroundColor="#353f4a";
-    document.getElementById('message10').style.backgroundColor="#353f4a";
-    
-    document.getElementById('contenumessage1').style.display="none";
-    document.getElementById('contenumessage2').style.display="none";
-    document.getElementById('contenumessage3').style.display="none";
-    document.getElementById('contenumessage4').style.display="none";
-    document.getElementById('contenumessage5').style.display="none";
-    document.getElementById('contenumessage6').style.display="none";
-    document.getElementById('contenumessage7').style.display="none";
-    document.getElementById('contenumessage8').style.display="none";
-    document.getElementById('contenumessage9').style.display="none";
-    document.getElementById('contenumessage10').style.display="none";
+    for (let i = 1; i <= 10; i++) {
+        $("message" + i).style("backgroundColor", "#353f4a")
+        $("#contenumessage" + i).style("diplay", "none")
+    }
 }
 function message1(){
     document.getElementById('message1').style.backgroundColor="#0068e1";
