@@ -1,21 +1,16 @@
-$(document).ready(
-    function()
-    {
-        $('#dock2').Fisheye(
-            {
-                maxWidth: 23,
-                items: 'a',
-                itemsText: 'span',
-                container: '.dock-container2',
-                itemWidth: 47,
-                proximity: 65,
-                alignment : 'left',
-                valign: 'bottom',
-                halign : 'center'
-            }
-        )
-    }
-);
+$(document).ready(function() {
+    $('#dock2').Fisheye({
+        maxWidth: 23,
+        items: 'a',
+        itemsText: 'span',
+        container: '.dock-container2',
+        itemWidth: 47,
+        proximity: 65,
+        alignment : 'left',
+        valign: 'bottom',
+        halign : 'center'
+    })
+});
 
 function couleurmessage(){
     document.getElementById('message1').style.backgroundColor="#353f4a";
