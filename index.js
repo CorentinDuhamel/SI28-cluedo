@@ -13,156 +13,98 @@ $(document).ready(function() {
 });
 
 function couleurmessage(){
-    document.getElementById('message1').style.backgroundColor="#353f4a";
-    document.getElementById('message2').style.backgroundColor="#353f4a";
-    document.getElementById('message3').style.backgroundColor="#353f4a";
-    document.getElementById('message4').style.backgroundColor="#353f4a";
-    document.getElementById('message5').style.backgroundColor="#353f4a";
-    document.getElementById('message6').style.backgroundColor="#353f4a";
-    document.getElementById('message7').style.backgroundColor="#353f4a";
-    document.getElementById('message8').style.backgroundColor="#353f4a";
-    document.getElementById('message9').style.backgroundColor="#353f4a";
-    document.getElementById('message10').style.backgroundColor="#353f4a";
+    for (let i = 1; i <= 10; i++) {
+        $("message" + i).css("backgroundColor", "#353f4a")
+        $("#contenumessage" + i).css("diplay", "none")
+    }
     
-    document.getElementById('contenumessage1').style.display="none";
-    document.getElementById('contenumessage2').style.display="none";
-    document.getElementById('contenumessage3').style.display="none";
-    document.getElementById('contenumessage4').style.display="none";
-    document.getElementById('contenumessage5').style.display="none";
-    document.getElementById('contenumessage6').style.display="none";
-    document.getElementById('contenumessage7').style.display="none";
-    document.getElementById('contenumessage8').style.display="none";
-    document.getElementById('contenumessage9').style.display="none";
-    document.getElementById('contenumessage10').style.display="none";
+    n = $(this).attr("data-message-id")
+    $('#message' + n).css("backgroundColor", "#0068e1")
+    $('#contenumessage' + n).css("display", "block")
 }
-function message1(){
-    document.getElementById('message1').style.backgroundColor="#0068e1";
-    document.getElementById('contenumessage1').style.display="block";
-}
-function message2(){
-    document.getElementById('message2').style.backgroundColor="#0068e1";
-    document.getElementById('contenumessage2').style.display="block";
-}
-function message3(){
-    document.getElementById('message3').style.backgroundColor="#0068e1";
-    document.getElementById('contenumessage3').style.display="block";
-}
-function message4(){
-    document.getElementById('message4').style.backgroundColor="#0068e1";
-    document.getElementById('contenumessage4').style.display="block";
-}
-function message5(){
-    document.getElementById('message5').style.backgroundColor="#0068e1";
-    document.getElementById('contenumessage5').style.display="block";
-}
-function message6(){
-    document.getElementById('message6').style.backgroundColor="#0068e1";
-    document.getElementById('contenumessage6').style.display="block";
-}
-function message7(){
-    document.getElementById('message7').style.backgroundColor="#0068e1";
-    document.getElementById('contenumessage7').style.display="block";
-}
-function message8(){
-    document.getElementById('message8').style.backgroundColor="#0068e1";
-    document.getElementById('contenumessage8').style.display="block";
-}
-function message9(){
-    document.getElementById('message9').style.backgroundColor="#0068e1";
-    document.getElementById('contenumessage9').style.display="block";
-}
-function message10(){
-    document.getElementById('message10').style.backgroundColor="#0068e1";
-    document.getElementById('contenumessage10').style.display="block";
+
+function showPane(pane_name) {
+    pane_list = ['mail', 'safari', 'facetime', 'message', 'photos']
+
+    for (const pane of pane_list) {
+        pane === pane_name ? $("#" + pane).show() : $("#" + pane).hide()
+    }
 }
 
 function mail(){
-    document.getElementById('mail').style.display="block";
-    document.getElementById('safari').style.display="none";
-    document.getElementById('facetime').style.display="none";
-    document.getElementById('message').style.display="none";
-    document.getElementById('photos').style.display="none";
+    showPane("mail")
 }
+
 function photos(){
-    document.getElementById('photos').style.display="block";
-    document.getElementById('mail').style.display="none";
-    document.getElementById('safari').style.display="none";
-    document.getElementById('facetime').style.display="none";
-    document.getElementById('message').style.display="none";
+    showPane("photos")
 }
+
 function safari(){
-    document.getElementById('safari').style.display="block";
-    document.getElementById('mail').style.display="none";
-    document.getElementById('facetime').style.display="none";
-    document.getElementById('message').style.display="none";
-    document.getElementById('photos').style.display="none";
+    showPane("safari")
 }
-function cachermail(){
-    document.getElementById('mail').style.display="none";
-}
+
 function facetime(){
-    document.getElementById('facetime').style.display="block";
-    document.getElementById('safari').style.display="none";
-    document.getElementById('mail').style.display="none";
-    document.getElementById('message').style.display="none";
-    document.getElementById('photos').style.display="none";
+    showPane("facetime")
+}
+
+function message(){
+    showPane("message")
+}
+
+
+function hidePane(pane_name) {
+    $("#" + pane_name).hide()
+}
+
+function cachermail(){
+    hidePane('mail')
 }
 function cacherfacetime(){
-    document.getElementById('facetime').style.display="none";
+    hidePane('facetime')
 }
 function cachersafari(){
-    document.getElementById('safari').style.display="none";
-}
-function message(){
-    document.getElementById('message').style.display="block";
-    document.getElementById('safari').style.display="none";
-    document.getElementById('facetime').style.display="none";
-    document.getElementById('mail').style.display="none";
-    document.getElementById('photos').style.display="none";
+    hidePane('safari')
 }
 function cachermessage(){
-    document.getElementById('message').style.display="none";
+    hidePane('message')
+}
+
+
+function afficherBoutons(pane_id) {
+    $("#reduce" + pane_id).show()
+    $("#extend" + pane_id).show()
+    $("#close" + pane_id).show()
+}
+
+function cacherBoutons(pane_id) {
+    $("#reduce" + pane_id).hide()
+    $("#extend" + pane_id).hide()
+    $("#close" + pane_id).hide()
 }
 
 function afficherBoutonsfb(){
-    document.getElementById('reducefb').style.display="block";
-    document.getElementById('extendfb').style.display="block";
-    document.getElementById('closefb').style.display="block";
+    afficherBoutons("fb")
 }
 function cacherBoutonsfb(){
-    document.getElementById('reducefb').style.display="none";
-    document.getElementById('extendfb').style.display="none";
-    document.getElementById('closefb').style.display="none";
+    cacherBoutons("fb")
 }
 function cacherBoutonssafari(){
-    document.getElementById('reducesafari').style.display="none";
-    document.getElementById('extendsafari').style.display="none";
-    document.getElementById('closesafari').style.display="none";
+    cacherBoutons("safari")
 }
 function afficherBoutonsmessage(){
-    document.getElementById('reducemessage').style.display="block";
-    document.getElementById('extendmessage').style.display="block";
-    document.getElementById('closemessage').style.display="block";
+    afficherBoutons("message")
 }
 function afficherBoutonssafari(){
-    document.getElementById('reducesafari').style.display="block";
-    document.getElementById('extendsafari').style.display="block";
-    document.getElementById('closesafari').style.display="block";
+    afficherBoutons("safari")
 }
 function cacherBoutonsmessage(){
-    document.getElementById('reducemessage').style.display="none";
-    document.getElementById('extendmessage').style.display="none";
-    document.getElementById('closemessage').style.display="none";
+    cacherBoutons("message")
 }
 function afficherBoutonsmail(){
-    document.getElementById('reducemail').style.display="block";
-    document.getElementById('extendmail').style.display="block";
-    document.getElementById('closemail').style.display="block";
+    afficherBoutons("mail")
 }
 function cacherBoutonsmail(){
-    document.getElementById('reducemail').style.display="none";
-    document.getElementById('extendmail').style.display="none";
-    document.getElementById('closemail').style.display="none";
+    cacherBoutons("mail")
 }
 
 function displaybutton(){
@@ -173,7 +115,7 @@ function displaybutton(){
 }
 
 function startgame(){
-    document.getElementById('intro').style.display="none";
+    $("#intro").hide()
 }
 
 // Set constraints for the video stream
@@ -200,7 +142,7 @@ function cameraStart() {
 }
 
 function element8(){
-    document.getElementById('element8').style.display="block";
+    $("#element8").show()
 }
 
 // Start the video stream when the window loads
