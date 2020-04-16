@@ -220,6 +220,7 @@ function autoType(elementClass, typingSpeed){
     var text = thhis.text().trim().split('');
     var amntOfChars = text.length;
     var newString = "";
+    var space = 0;
     thhis.text("|");
     setTimeout(function(){
         thhis.css("opacity",1);
@@ -227,10 +228,12 @@ function autoType(elementClass, typingSpeed){
         thhis.text("");
         for(var i = 0; i < amntOfChars; i++){
             (function(i,char){
+                if (char === ' ')
+                    space++
                 setTimeout(function() {        
                     newString += char;
                     thhis.text(newString);
-                },i*typingSpeed);
+                },(i-space)*typingSpeed);
             })(i+1,text[i]);
         }
     },1500);
