@@ -115,7 +115,7 @@ function displaybutton(){
 }
 
 function startgame(){
-    document.getElementById('intro').style.display="none";
+    $("#intro").hide()
 }
 
 // Set constraints for the video stream
@@ -142,7 +142,7 @@ function cameraStart() {
 }
 
 function element8(){
-    document.getElementById('element8').style.display="block";
+    $("#element8").show()
 }
 
 // Start the video stream when the window loads
