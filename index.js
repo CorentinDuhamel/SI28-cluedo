@@ -14,49 +14,13 @@ $(document).ready(function() {
 
 function couleurmessage(){
     for (let i = 1; i <= 10; i++) {
-        $("message" + i).style("backgroundColor", "#353f4a")
-        $("#contenumessage" + i).style("diplay", "none")
+        $("message" + i).css("backgroundColor", "#353f4a")
+        $("#contenumessage" + i).css("diplay", "none")
     }
-}
-function message1(){
-    document.getElementById('message1').style.backgroundColor="#0068e1";
-    document.getElementById('contenumessage1').style.display="block";
-}
-function message2(){
-    document.getElementById('message2').style.backgroundColor="#0068e1";
-    document.getElementById('contenumessage2').style.display="block";
-}
-function message3(){
-    document.getElementById('message3').style.backgroundColor="#0068e1";
-    document.getElementById('contenumessage3').style.display="block";
-}
-function message4(){
-    document.getElementById('message4').style.backgroundColor="#0068e1";
-    document.getElementById('contenumessage4').style.display="block";
-}
-function message5(){
-    document.getElementById('message5').style.backgroundColor="#0068e1";
-    document.getElementById('contenumessage5').style.display="block";
-}
-function message6(){
-    document.getElementById('message6').style.backgroundColor="#0068e1";
-    document.getElementById('contenumessage6').style.display="block";
-}
-function message7(){
-    document.getElementById('message7').style.backgroundColor="#0068e1";
-    document.getElementById('contenumessage7').style.display="block";
-}
-function message8(){
-    document.getElementById('message8').style.backgroundColor="#0068e1";
-    document.getElementById('contenumessage8').style.display="block";
-}
-function message9(){
-    document.getElementById('message9').style.backgroundColor="#0068e1";
-    document.getElementById('contenumessage9').style.display="block";
-}
-function message10(){
-    document.getElementById('message10').style.backgroundColor="#0068e1";
-    document.getElementById('contenumessage10').style.display="block";
+    
+    n = $(this).attr("data-message-id")
+    $('#message' + n).css("backgroundColor", "#0068e1")
+    $('#contenumessage' + n).css("display", "block")
 }
 
 function mail(){

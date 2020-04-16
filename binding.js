@@ -16,16 +16,6 @@ $(function() {
     $("#buttonmail").mouseover(afficherBoutonsmail)
 
     $(".msg").click(couleurmessage)
-    $("#message1").click(message1)
-    $("#message2").click(message2)
-    $("#message3").click(message3)
-    $("#message4").click(message4)
-    $("#message5").click(message5)
-    $("#message6").click(message6)
-    $("#message7").click(message7)
-    $("#message8").click(message8)
-    $("#message9").click(message9)
-    $("#message10").click(message10)
 
     $("#buttonmessage").click(cachermessage)
     $("#buttonmessage").mouseout(cacherBoutonsmessage)
