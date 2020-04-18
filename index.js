@@ -40,17 +40,8 @@ function hidePane(pane_name) {
     $("#" + pane_name).hide()
 }
 
-function cachermail(){
-    hidePane('mail')
-}
-function cacherfacetime(){
-    hidePane('facetime')
-}
-function cachersafari(){
-    hidePane('safari')
-}
-function cachermessage(){
-    hidePane('message')
+function clickCacher(){
+    hidePane($(this).parent().attr('id'))
 }
 
 

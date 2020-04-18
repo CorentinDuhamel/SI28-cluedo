@@ -1,16 +1,16 @@
 $(window).on("load", displaybutton)
 
-function bind_button(btn_name, click, cacher, afficher) {
-    $("#" + btn_name).click(click)
+function bind_button(btn_name, cacher, afficher) {
+    $("#" + btn_name).click(clickCacher)
     $("#" + btn_name).mouseout(cacher)
     $("#" + btn_name).mouseover(afficher)
 }
 
 $(function() {
-    bind_button("buttonsafari", cachersafari, cacherBoutonssafari, afficherBoutonssafari)
-    bind_button("buttonfacetime", cacherfacetime, cacherBoutonsfb, afficherBoutonsfb)
-    bind_button("buttonmail", cachermail, cacherBoutonsmail, afficherBoutonsmail)
-    bind_button("buttonmessage", cachermessage, cacherBoutonsmessage, afficherBoutonsmessage)
+    bind_button("buttonsafari", cacherBoutonssafari, afficherBoutonssafari)
+    bind_button("buttonfacetime", cacherBoutonsfb, afficherBoutonsfb)
+    bind_button("buttonmail", cacherBoutonsmail, afficherBoutonsmail)
+    bind_button("buttonmessage", cacherBoutonsmessage, afficherBoutonsmessage)
     
     $("#element8").click(element8)
 
