@@ -35,15 +35,9 @@ function clickDock(){
     showPane($(this).attr('id').split('-')[0])
 }
 
-
-function hidePane(pane_name) {
-    $("#" + pane_name).hide()
-}
-
 function clickCacher(){
-    hidePane($(this).parent().attr('id'))
+    $("#" + $(this).parent().attr('id')).hide()
 }
-
 
 function afficherBoutons() {
     pane_id = $(this).parent().attr('id')
