@@ -1,24 +1,16 @@
 $(window).on("load", displaybutton)
 
-function bind_button(btn_name, click, cacher, afficher) {
-    $("#" + btn_name).click(click)
-    $("#" + btn_name).mouseout(cacher)
-    $("#" + btn_name).mouseover(afficher)
-}
-
 $(function() {
-    bind_button("buttonsafari", cachersafari, cacherBoutonssafari, afficherBoutonssafari)
-    bind_button("buttonfacetime", cacherfacetime, cacherBoutonsfb, afficherBoutonsfb)
-    bind_button("buttonmail", cachermail, cacherBoutonsmail, afficherBoutonsmail)
-    bind_button("buttonmessage", cachermessage, cacherBoutonsmessage, afficherBoutonsmessage)
+    btn_names = ["buttonsafari", "buttonfacetime", "buttonmail", "buttonmessage"]
+    for(let btn_name of btn_names) {
+        $("#" + btn_name).click(clickCacher)
+        $("#" + btn_name).mouseout(toggleBoutons)
+        $("#" + btn_name).mouseover(toggleBoutons)
+    }
     
     $("#element8").click(element8)
 
     $(".msg").click(couleurmessage)
 
-    $("#safari-dock").click(safari)
-    $("#mail-dock").click(mail)
-    $("#photos-dock").click(photos)
-    $("#message-dock").click(message)
-    $("#facetime-dock").click(facetime)
+    $(".click-dock").click(clickDock)
 })
