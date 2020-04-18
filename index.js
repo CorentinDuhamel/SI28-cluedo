@@ -45,41 +45,18 @@ function clickCacher(){
 }
 
 
-function afficherBoutons(pane_id) {
+function afficherBoutons() {
+    pane_id = $(this).parent().attr('id')
     $("#reduce" + pane_id).show()
     $("#extend" + pane_id).show()
     $("#close" + pane_id).show()
 }
 
-function cacherBoutons(pane_id) {
+function cacherBoutons() {
+    pane_id = $(this).parent().attr('id')
     $("#reduce" + pane_id).hide()
     $("#extend" + pane_id).hide()
     $("#close" + pane_id).hide()
-}
-
-function afficherBoutonsfb(){
-    afficherBoutons("fb")
-}
-function cacherBoutonsfb(){
-    cacherBoutons("fb")
-}
-function cacherBoutonssafari(){
-    cacherBoutons("safari")
-}
-function afficherBoutonsmessage(){
-    afficherBoutons("message")
-}
-function afficherBoutonssafari(){
-    afficherBoutons("safari")
-}
-function cacherBoutonsmessage(){
-    cacherBoutons("message")
-}
-function afficherBoutonsmail(){
-    afficherBoutons("mail")
-}
-function cacherBoutonsmail(){
-    cacherBoutons("mail")
 }
 
 function displaybutton(){
@@ -98,10 +75,7 @@ var constraints = { video: { facingMode: "user" }, audio: false };
 var track = null;
 
 // Define constants
-const cameraView = document.querySelector("#camera--view"),
-cameraOutput = document.querySelector("#camera--output"),
-cameraSensor = document.querySelector("#camera--sensor"),
-cameraTrigger = document.querySelector("#camera--trigger");
+const cameraView = document.querySelector("#camera--view")
 
 // Access the device camera and stream to cameraView
 function cameraStart() {
