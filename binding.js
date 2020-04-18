@@ -4,8 +4,8 @@ $(function() {
     btn_names = ["buttonsafari", "buttonfacetime", "buttonmail", "buttonmessage"]
     for(let btn_name of btn_names) {
         $("#" + btn_name).click(clickCacher)
-        $("#" + btn_name).mouseout(cacherBoutons)
-        $("#" + btn_name).mouseover(afficherBoutons)
+        $("#" + btn_name).mouseout(toggleBoutons)
+        $("#" + btn_name).mouseover(toggleBoutons)
     }
     
     $("#element8").click(element8)

@@ -39,18 +39,11 @@ function clickCacher(){
     $("#" + $(this).parent().attr('id')).hide()
 }
 
-function afficherBoutons() {
+function toggleBoutons() {
     pane_id = $(this).parent().attr('id')
-    $("#reduce" + pane_id).show()
-    $("#extend" + pane_id).show()
-    $("#close" + pane_id).show()
-}
-
-function cacherBoutons() {
-    pane_id = $(this).parent().attr('id')
-    $("#reduce" + pane_id).hide()
-    $("#extend" + pane_id).hide()
-    $("#close" + pane_id).hide()
+    $("#reduce" + pane_id).toggle()
+    $("#extend" + pane_id).toggle()
+    $("#close" + pane_id).toggle()
 }
 
 function displaybutton(){
@@ -90,8 +83,6 @@ function element8(){
 
 // Start the video stream when the window loads
 window.addEventListener("load", cameraStart, false);
-
-
 
 
 function autoType(elementClass, typingSpeed){
