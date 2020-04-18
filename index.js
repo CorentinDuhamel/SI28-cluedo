@@ -31,24 +31,8 @@ function showPane(pane_name) {
     }
 }
 
-function mail(){
-    showPane("mail")
-}
-
-function photos(){
-    showPane("photos")
-}
-
-function safari(){
-    showPane("safari")
-}
-
-function facetime(){
-    showPane("facetime")
-}
-
-function message(){
-    showPane("message")
+function clickDock(){
+    showPane($(this).attr('id').split('-')[0])
 }
 
 

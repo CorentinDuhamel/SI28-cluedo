@@ -16,9 +16,5 @@ $(function() {
 
     $(".msg").click(couleurmessage)
 
-    $("#safari-dock").click(safari)
-    $("#mail-dock").click(mail)
-    $("#photos-dock").click(photos)
-    $("#message-dock").click(message)
-    $("#facetime-dock").click(facetime)
+    $(".click-dock").click(clickDock)
 })
