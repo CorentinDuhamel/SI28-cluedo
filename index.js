@@ -15,12 +15,12 @@ $(document).ready(function() {
 function couleurmessage(){
     for (let i = 1; i <= 10; i++) {
         $("message" + i).css("backgroundColor", "#353f4a")
-        $("#contenumessage" + i).css("diplay", "none")
+        $("#contenumessage" + i).hide()
     }
     
     n = $(this).attr("data-message-id")
     $('#message' + n).css("backgroundColor", "#0068e1")
-    $('#contenumessage' + n).css("display", "block")
+    $('#contenumessage' + n).show()
 }
 
 function showPane(pane_name) {
