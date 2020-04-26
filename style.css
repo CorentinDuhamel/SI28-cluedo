@@ -137,6 +137,7 @@ img {
 	width: 41.2%;
 	height: 67%;
 	padding: 15px 15px 15px 15px;
+	display: none;
 }
 .messageenvoye{
 	position: relative;
@@ -152,7 +153,7 @@ img {
 	background-color: #0364d5;
 	color: #ffffff;
 	font-size: 1.4em;
-	display: inline-block;
+	display: block;
 	padding: 4px 8px 6px 8px;
 }
 .messagerecu{
@@ -168,7 +169,7 @@ img {
 	background-color: #565554;
 	color: #ffffff;
 	font-size: 1.4em;
-	display: inline;
+	display: block;
 	padding: 4px 8px 6px 8px;
 }
 .mail{
