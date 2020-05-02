@@ -11,6 +11,8 @@ $(function() {
     $("#element8").click(element8)
 
     $(".msg").click(couleurmessage)
+    
+    $(".mail").click(couleurmail)
 
     $(".click-dock").click(clickDock)
 })
