@@ -1,3 +1,5 @@
+var found_clue = new Set()
+
 $(document).ready(function() {
     $('#dock2').Fisheye({
         maxWidth: 23,
@@ -139,3 +141,13 @@ function autoType(elementClass, typingSpeed){
 $(document).ready(function(){
     autoType(".type-js",100);
 });
+
+
+/**
+ * On click on clue, register it in the indice list to progress in the story
+ * The clue have to have the class "clue" and an attribute attr-clue like this:
+ *      attr-clue="clue-key"
+ */
+function registerClue() {
+    found_clue.add($(this).attr("attr-clue"))
+}
