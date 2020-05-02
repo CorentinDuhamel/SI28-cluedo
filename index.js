@@ -23,11 +23,32 @@ function couleurmessage(){
     $('#contenumessage' + n).show()
 }
 
+function couleurmail(){
+    for (let i = 1; i <= 10; i++) {
+        $("mail" + i).css("backgroundColor", "#353f4a")
+        $("#contenumail" + i).hide()
+    }
+    
+    n = $(this).attr("data-mail-id")
+    $('#mail' + n).css("backgroundColor", "#0068e1")
+    $('#contenumail' + n).show()
+}
+
 function showPane(pane_name) {
     pane_list = ['mail', 'safari', 'facetime', 'message', 'photos']
 
     for (const pane of pane_list) {
         pane === pane_name ? $("#" + pane).show() : $("#" + pane).hide()
+    }
+    
+    if (pane_name == 'message' || pane_name == 'mail'){
+        for (let i = 1; i <= 10; i++) {
+            $(pane_name + i).css("backgroundColor", "#353f4a")
+            $("#contenu" + pane_name + i).hide()
+        }
+        
+        $('#' + pane_name + '1').css("backgroundColor", "#0068e1")
+        $('#contenu' + pane_name + '1').show()
     }
 }
 
