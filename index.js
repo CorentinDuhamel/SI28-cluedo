@@ -27,11 +27,12 @@ function couleurmessage(){
 function couleurmail(){
     for (let i = 1; i <= 10; i++) {
         $("mail" + i).css("backgroundColor", "#353f4a")
+        $(".mail").css({"backgroundColor" : "#272b2d"})
         $("#contenumail" + i).hide()
     }
     
     n = $(this).attr("data-mail-id")
-    $('#mail' + n).css("backgroundColor", "#0068e1")
+    $(this).css({"backgroundColor" : "#0158d0"});
     $('#contenumail' + n).show()
 }
 
