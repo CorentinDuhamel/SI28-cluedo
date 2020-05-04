@@ -149,6 +149,12 @@ img {
 	padding: 15px 15px 15px 15px;
 	border-radius: 0px 0px 8px 0px;
 	background-color: #ffffff;
+	overflow: auto;
+}
+.msg{
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #ffffff;
 }
 .messageenvoye{
 	position: relative;
@@ -204,6 +210,7 @@ img {
 	width: 18.65%;
 	height: 8%;
 	background-color: #0068e1;
+	border-bottom: 1px solid #63696b;
 }
 .message2{
 	position: absolute;
@@ -212,6 +219,7 @@ img {
 	width: 18.65%;
 	height: 8%;
 	background-color: #353f4a;
+	border-bottom: 1px solid #63696b;
 }
 .message3{
 	position: absolute;
@@ -220,6 +228,7 @@ img {
 	width: 18.65%;
 	height: 8%;
 	background-color: #353f4a;
+	border-bottom: 1px solid #63696b;
 }
 .message4{
 	position: absolute;
@@ -228,6 +237,7 @@ img {
 	width: 18.65%;
 	height: 8%;
 	background-color: #353f4a;
+	border-bottom: 1px solid #63696b;
 }
 .message5{
 	position: absolute;
@@ -236,6 +246,7 @@ img {
 	width: 18.65%;
 	height: 8%;
 	background-color: #353f4a;
+	border-bottom: 1px solid #63696b;
 }
 .message6{
 	position: absolute;
@@ -244,6 +255,7 @@ img {
 	width: 18.65%;
 	height: 8%;
 	background-color: #353f4a;
+	border-bottom: 1px solid #63696b;
 }
 .message7{
 	position: absolute;
@@ -252,6 +264,7 @@ img {
 	width: 18.65%;
 	height: 8%;
 	background-color: #353f4a;
+	border-bottom: 1px solid #63696b;
 }
 .message8{
 	position: absolute;
@@ -260,14 +273,16 @@ img {
 	width: 18.65%;
 	height: 8%;
 	background-color: #353f4a;
+	border-bottom: 1px solid #63696b;
 }
 .message9{
 	position: absolute;
 	top: 74.9%;
 	left: 19%;
 	width: 18.65%;
-	height: 8%;
+	height: 8.1%;
 	background-color: #353f4a;
+	border-bottom: 1px solid #63696b;
 }
 .message10{
 	position: absolute;
@@ -276,6 +291,7 @@ img {
 	width: 18.65%;
 	height: 6.1%;
 	background-color: #353f4a;
+	display: none;
 }
 .image_mail{
 	position: absolute;
