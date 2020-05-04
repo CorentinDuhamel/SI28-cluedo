@@ -135,9 +135,10 @@ img {
 	top: 13.5%;
 	left: 37.7%;
 	width: 41.2%;
-	height: 67%;
+	height: 61.6%;
 	padding: 15px 15px 15px 15px;
 	display: none;
+	overflow: auto;
 }
 .contenumail{
 	position: absolute;
