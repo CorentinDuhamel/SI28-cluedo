@@ -2,6 +2,7 @@ $(window).on("load", displaybutton)
 
 $(function() {
     $("#endgame").hide()
+    $("#endgame input").hide()
     $("#lasttext").hide()
 
     btn_names = ["buttonsafari", "buttonfacetime", "buttonmail", "buttonmessage"]

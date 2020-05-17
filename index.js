@@ -6,37 +6,44 @@ var game_ends = [ // Structure for each end : Indices needed (list of possibilit
     {
         indices: [],
         cause: "La fouille de l’ordinateur ne m’a rien appris, je dois compter sur la police",
-        consequence: "Tu n’as pas trouvé d’indices sur la disparition de Rose. Tu espères la revoir un jour, mais tu n’as plus jamais eu de nouvelles d’elle."
+        consequence: "Tu n’as pas trouvé d’indices sur la disparition de Rose. Tu espères la revoir un jour, mais tu n’as plus jamais eu de nouvelles d’elle.",
+        key: 'a'
     },
     {
         indices: [["pansy_msg"]],
         cause: "Rose trompe Pansy avec Flint, je dois contacter Flint.",
-        consequence: "Tu apprends que Millie, la fille de Rose et Flint, a emménagé chez Flint, ce qui confirme tes soupçons. Cependant, Flint nie avoir une relation avec Rose et tu n’auras plus jamais de nouvelles de ta soeur."
+        consequence: "Tu apprends que Millie, la fille de Rose et Flint, a emménagé chez Flint, ce qui confirme tes soupçons. Cependant, Flint nie avoir une relation avec Rose et tu n’auras plus jamais de nouvelles de ta soeur.",
+        key: 'b'
     },
     {
         indices: [["mother_msg"]],
         cause: "Rose à déménagé avec Pansy et à coupé les ponts avec la famille après une énième dispute avec notre mère. Je vais essayer des les recontacter.",
-        consequence: "Tu n’arriveras pas à contacter Rose, ni Pansy. Au bout d’un moment, tu te résignes et espère un jour qu’elle te recontactera d’elle même mais cela n’arrivera jamais."
+        consequence: "Tu n’arriveras pas à contacter Rose, ni Pansy. Au bout d’un moment, tu te résignes et espère un jour qu’elle te recontactera d’elle même mais cela n’arrivera jamais.",
+        key: 'c'
     },
     {
         indices: [["venezzia_msg"]],
         cause: "Flint a entraîné Rose en eaux troubles, je dois le dénoncer à la police",
-        consequence: "Après avoir dénoncé Flint et son entreprise, ce dernier est arrêté et mis en garde à vue, et Millie est placée dans un foyer.  Mais il niera avoir jamais revu Rose. Tu n’as plus jamais eu de nouvelles de ta soeur."
+        consequence: "Après avoir dénoncé Flint et son entreprise, ce dernier est arrêté et mis en garde à vue, et Millie est placée dans un foyer.  Mais il niera avoir jamais revu Rose. Tu n’as plus jamais eu de nouvelles de ta soeur.",
+        key: 'd'
     },
     {
         indices: [["flint_msg"], ["durand_msg"]],
         cause: "Millie, ma nièce est atteinte d’une maladie rare et les traitements coûtent chers. Rose a dû arnaquer un certain M. Durand pour pouvoir les payer, mais on dirait qu’il s’agit d’une qu’il est dangereux de contrarier. Je devrais parler à la police de ce M. Durand.",
-        consequence: "La police parvient tant bien que mal à remonter la trace de “M. Durand”, un mafieux haut placé. Cependant il ne donnera jamais aucune information sur le sort de Rose. Tu n’auras jamais plus de nouvelles de ta soeur."
+        consequence: "La police parvient tant bien que mal à remonter la trace de “M. Durand”, un mafieux haut placé. Cependant il ne donnera jamais aucune information sur le sort de Rose. Tu n’auras jamais plus de nouvelles de ta soeur.",
+        key: 'e'
     },
     {
         indices: [["durand_msg", "booking_mail"]],
         cause: "Millie, ma nièce est atteinte d’une maladie rare et les traitements coûtent chers. Rose a dû arnaquer un certain M. Durand pour pouvoir les payer, puis se cacher dans l'hôtel qu’elle a réservé pour éviter les représailles. Je devrais m’y rendre pour vérifier qu’elle va bien et voir comment l’aider.",
-        consequence: "Lorsque tu arrives devant l’hôtel, tu es accueilli par les sirènes des pompiers et de la police. Tu es arrivé trop tard, Rose à été retrouvée morte dans sa chambre d’hôtel. Personne n’a rien vu; ni entendu. Tu identifie le corps, ta soeur ayant utilisé un faux nom, et raconte tout l’histoire à la police.Elle parviendra tant bien que mal à remonter la trace de “M. Durand”, un mafieux haut placé, mais sa condamnation ne restera qu’un maigre réconfort."
+        consequence: "Lorsque tu arrives devant l’hôtel, tu es accueilli par les sirènes des pompiers et de la police. Tu es arrivé trop tard, Rose à été retrouvée morte dans sa chambre d’hôtel. Personne n’a rien vu; ni entendu. Tu identifie le corps, ta soeur ayant utilisé un faux nom, et raconte tout l’histoire à la police.Elle parviendra tant bien que mal à remonter la trace de “M. Durand”, un mafieux haut placé, mais sa condamnation ne restera qu’un maigre réconfort.",
+        key: 'f'
     },
     {
         indices: [["durand_msg", "booking_mail", "bank_account"]],
         cause: "Millie, ma nièce est atteinte d’une maladie rare et les traitements coûtent chers. Rose a dû arnaquer un certain M. Durand pour pouvoir les payer, puis se cacher dans l'hôtel qu’elle a réservé pour éviter les représailles. Mais elle ignore que M. Durand l’a retrouvée et lui a lancé un ultimatum. Je dois la prévenir immédiatement de s’enfuir, je pourrais surement la contacter via la réception de l’hôtel.",
-        consequence: "Après avoir décrit ta soeur au réceptionniste, tu parviens à entrer en contact avec elle. Tu la convainc de s’enfuir, ce qu’elle fait. Elle ne te dit pas ou elle va, mais te donne des nouvelles via des numéro de téléphone jetables. Quelques semaines plus tard elle revient chez elle et explique toute l’histoire à Pansy. Il décident peu après de déménager avec Millie loin de tout danger. Millie se rétablit correctement et tu continue à prendre des nouvelles de ta soeur de temps en temps."
+        consequence: "Après avoir décrit ta soeur au réceptionniste, tu parviens à entrer en contact avec elle. Tu la convainc de s’enfuir, ce qu’elle fait. Elle ne te dit pas ou elle va, mais te donne des nouvelles via des numéro de téléphone jetables. Quelques semaines plus tard elle revient chez elle et explique toute l’histoire à Pansy. Il décident peu après de déménager avec Millie loin de tout danger. Millie se rétablit correctement et tu continue à prendre des nouvelles de ta soeur de temps en temps.",
+        key: 'g'
     }
 ]
 
@@ -224,7 +231,18 @@ function stopCumputer() {
 }
 
 function displayCauses(found_causes) {
+    let keys = new Set()
 
+    for (const cause of found_causes) {
+        keys.add(found_causes.key)
+    }
+
+    $("#endgame").show()
+
+    $("#endgame input").each(function() {
+        if (keys.has($(this).attr("data-key")))
+            $(this).show()
+    })
 }
 
 function choosen_end(n) {
