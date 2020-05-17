@@ -16,23 +16,25 @@ $(document).ready(function() {
 
 function couleurmessage(){
     for (let i = 1; i <= 10; i++) {
-        $("message" + i).css("backgroundColor", "#353f4a")
+        $("#message" + i).css({"backgroundColor" : "#662266"});
         $("#contenumessage" + i).hide()
     }
     
+    $(".msg").css({"backgroundColor" : "#353f4a"})
     n = $(this).attr("data-message-id")
-    $('#message' + n).css("backgroundColor", "#0068e1")
+    $(this).css({"backgroundColor" : "#0068e1"});
     $('#contenumessage' + n).show()
 }
 
 function couleurmail(){
     for (let i = 1; i <= 10; i++) {
         $("mail" + i).css("backgroundColor", "#353f4a")
+        $(".mail").css({"backgroundColor" : "#272b2d"})
         $("#contenumail" + i).hide()
     }
     
     n = $(this).attr("data-mail-id")
-    $('#mail' + n).css("backgroundColor", "#0068e1")
+    $(this).css({"backgroundColor" : "#0158d0"});
     $('#contenumail' + n).show()
 }
 
