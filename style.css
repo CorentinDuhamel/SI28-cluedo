@@ -37,7 +37,7 @@ img {
 		opacity: 0;
 	}
 }
-.intro{
+.intro, .endgame{
 	position: absolute;
 	top: 0;
 	left: 0;

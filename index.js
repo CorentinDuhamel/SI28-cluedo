@@ -226,3 +226,7 @@ function stopCumputer() {
 function displayCauses(found_causes) {
 
 }
+
+function choosen_end(n) {
+    $("#lasth1").text(game_ends[n].consequence)
+}
