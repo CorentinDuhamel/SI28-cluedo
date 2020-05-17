@@ -215,6 +215,14 @@ function stopCumputer() {
     for (const game_end of game_ends) {
         if (game_end.indices === [])
             found_causes.push(game_end)
-        
+        else 
+            if (match_indices(game_end.indices))
+                found_causes.push(game_end)
     }
+
+    displayCauses(foun)
+}
+
+function displayCauses(found_causes) {
+
 }
