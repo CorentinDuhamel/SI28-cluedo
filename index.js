@@ -186,7 +186,15 @@ $(document).ready(function(){
 
 
 function match_indices(needed_indices) {
-    
+    let rc = new Set()
+    for (const prop of needed_indices) {
+        let rc2 = true
+        for (const arg of prop) {
+            if (!found_clue.has(arg)) rc2 = false
+        }
+        rc.add(rc2)
+    }
+    return rc.has(true)
 }
 
 /**
