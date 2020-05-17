@@ -151,3 +151,10 @@ $(document).ready(function(){
 function registerClue() {
     found_clue.add($(this).attr("attr-clue"))
 }
+
+/**
+ * On click on stop computer, the game end, and show a specific end based on the found clues
+ */
+function stopCumputer() {
+
+}
