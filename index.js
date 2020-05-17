@@ -220,7 +220,7 @@ function stopCumputer() {
                 found_causes.push(game_end)
     }
 
-    displayCauses(foun)
+    displayCauses(found_causes)
 }
 
 function displayCauses(found_causes) {
@@ -229,4 +229,7 @@ function displayCauses(found_causes) {
 
 function choosen_end(n) {
     $("#lasth1").text(game_ends[n].consequence)
+    $("#endgame").hide()
+    $("#lasttext").show()
+    autoType(".type-last", 100)
 }

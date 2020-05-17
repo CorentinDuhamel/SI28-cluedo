@@ -1,6 +1,9 @@
 $(window).on("load", displaybutton)
 
 $(function() {
+    $("#endgame").hide()
+    $("#lasttext").hide()
+
     btn_names = ["buttonsafari", "buttonfacetime", "buttonmail", "buttonmessage"]
     for(let btn_name of btn_names) {
         $("#" + btn_name).click(clickCacher)
