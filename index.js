@@ -86,7 +86,7 @@ function couleurmail(){
 }
 
 function affichecontact(){
-    for (let i = 1; i <= 10; i++) {
+    for (let i = 1; i <= 28; i++) {
         $("contact" + i).css("backgroundColor", "#353f4a")
         $(".contact").css({"backgroundColor" : "#535e67"})
         $(".contact").css({"color" : "#000000"})
