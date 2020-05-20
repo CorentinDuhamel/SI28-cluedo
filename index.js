@@ -89,11 +89,13 @@ function affichecontact(){
     for (let i = 1; i <= 10; i++) {
         $("contact" + i).css("backgroundColor", "#353f4a")
         $(".contact").css({"backgroundColor" : "#535e67"})
+        $(".contact").css({"color" : "#000000"})
         $("#contenucontact" + i).hide()
     }
     
     n = $(this).attr("data-contact-id")
     $(this).css({"backgroundColor" : "#0158d0"});
+    $(this).css({"color" : "#ffffff"});
     $('#contenucontact' + n).show()
 }
 
