@@ -261,6 +261,14 @@ img {
 	background-color: #ffffff;
 	overflow: auto;
 }
+.contenucontact{
+	position: absolute;
+	top: 1%;
+	left: 33%;
+	width: 61%;
+	height: 85%;
+	z-index: 99;
+}
 .msg{
 	font-size: 1.2em;
 	font-weight: bold;
