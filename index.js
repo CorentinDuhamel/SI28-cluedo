@@ -85,6 +85,18 @@ function couleurmail(){
     $('#contenumail' + n).show()
 }
 
+function affichecontact(){
+    for (let i = 1; i <= 10; i++) {
+        $("contact" + i).css("backgroundColor", "#353f4a")
+        $(".contact").css({"backgroundColor" : "#272b2d"})
+        $("#contenucontact" + i).hide()
+    }
+    
+    n = $(this).attr("data-contact-id")
+    $(this).css({"backgroundColor" : "#0158d0"});
+    $('#contenucontact' + n).show()
+}
+
 function showPane(pane_name) {
     pane_list = ['mail', 'safari', 'facetime', 'message', 'photos', 'contact', 'calendrier']
 
