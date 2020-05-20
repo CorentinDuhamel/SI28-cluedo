@@ -432,6 +432,34 @@ img {
 	left: 0;
 	width: 100%;
 }
+.calendrier-container{
+	position: absolute;
+	top: 12%;
+	left: 17%;
+	width: 65%;
+	height: 80%;
+	display: none;
+}
+.calendrier_accueil{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.contact-container{
+	position: absolute;
+	top: 8%;
+	left: 24%;
+	width: 60%;
+	height: 80%;
+	display: none;
+}
+.contact_accueil{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
 .closefb {
 	position: absolute;
 	top: 1.48%;
