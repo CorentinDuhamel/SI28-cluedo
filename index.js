@@ -86,7 +86,7 @@ function couleurmail(){
 }
 
 function showPane(pane_name) {
-    pane_list = ['mail', 'safari', 'facetime', 'message', 'photos']
+    pane_list = ['mail', 'safari', 'facetime', 'message', 'photos', 'contact', 'calendrier']
 
     for (const pane of pane_list) {
         pane === pane_name ? $("#" + pane).show() : $("#" + pane).hide()
