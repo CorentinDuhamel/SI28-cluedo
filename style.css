@@ -632,6 +632,14 @@ img {
 	height: 85%;
 	z-index: 99;
 }
+.contenusafari{
+	position: absolute;
+	top: 6.7%;
+	left: 0%;
+	width: 100%;
+	z-index: 99;
+	display: none;
+}
 .msg{
 	font-size: 1.2em;
 	font-weight: bold;
