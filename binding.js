@@ -19,6 +19,8 @@ $(function() {
     $(".mail").click(couleurmail)
     
     $(".contact").click(affichecontact)
+    
+    $(".safari").click(affichesite)
 
     $(".click-dock").click(clickDock)
 })
