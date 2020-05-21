@@ -99,6 +99,15 @@ function affichecontact(){
     $('#contenucontact' + n).show()
 }
 
+function affichesite(){
+    for (let i = 1; i <= 22; i++) {
+        $("#contenusafari" + i).hide()
+    }
+    
+    n = $(this).attr("data-safari-id")
+    $('#contenusafari' + n).show()
+}
+
 function showPane(pane_name) {
     pane_list = ['mail', 'safari', 'facetime', 'message', 'photos', 'contact', 'calendrier']
 
