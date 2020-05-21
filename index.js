@@ -108,6 +108,12 @@ function affichesite(){
     $('#contenusafari' + n).show()
 }
 
+function cachersite(){
+    for (let i = 1; i <= 22; i++) {
+        $("#contenusafari" + i).hide()
+    }
+}
+
 function showPane(pane_name) {
     pane_list = ['mail', 'safari', 'facetime', 'message', 'photos', 'contact', 'calendrier']
 
