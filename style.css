@@ -1131,3 +1131,54 @@ a.dock-item2 {
 	transform: scaleX(-1);
 	filter: FlipH;
 }
+
+.off-menu {
+	position: absolute;
+	z-index: 999999;
+	top: 0;
+	left: 12px;
+}
+
+.off-menu img {
+	width: 80%;
+}
+
+.off-menu-click {
+	position: absolute;
+	z-index: 9999999999999999; /* way too overkill */
+	width: 50px;
+	height: 30px;
+	top: 0;
+	left: 12px;
+}
+
+.stop {
+	position: absolute;
+	top: 210px;
+	left: 0;
+	width: 439px;
+	height: 150px;
+}
+
+.shutdown {
+	position: absolute;
+	z-index: 9999999999999999;
+	top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.annuler, .eteindre {
+	position: absolute;
+	width: 123px;
+	height: 31px;
+	top: 248px;
+}
+
+.annuler {
+	left: 452px;
+}
+
+.eteindre {
+	left: 598px;
+}

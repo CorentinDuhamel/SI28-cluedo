@@ -4,6 +4,8 @@ $(function() {
     $("#endgame").hide()
     $("#endgame input").hide()
     $("#lasttext").hide()
+    $(".off-menu").hide()
+    $(".shutdown").hide()
 
     btn_names = ["buttonsafari", "buttonfacetime", "buttonmail", "buttonmessage"]
     for(let btn_name of btn_names) {
@@ -23,4 +25,16 @@ $(function() {
     $(".safari").click(affichesite)
 
     $(".click-dock").click(clickDock)
+
+    $(".off-menu-click").click(function() { $(".off-menu").toggle() })
+    $(".stop").click(function() {
+        $(".off-menu").toggle()
+        $(".shutdown").toggle()
+    })
+
+    $(".annuler").click(function() { $(".shutdown").toggle() })
+    $(".eteindre").click(function() {
+        $(".shutdown").toggle()
+        stopCumputer()
+    })
 })
