@@ -122,6 +122,31 @@ img {
 	left: 0;
 	width: 100%;
 }
+.titre_mail{
+	position: absolute;
+	top: 8%;
+	left: 5%;
+	color: #dedfdf;
+	font-size: 1.1em;
+}
+.date_mail{
+	position: absolute;
+	top: 8.8%;
+	left: 75%;
+	width: 20%;
+	color: #9fa0a1;
+	font-size: 1em;
+	text-align: right;
+}
+.intro_mail{
+	position: absolute;
+	top: 42%;
+	left: 5%;
+	width: 90%;
+	color: #9fa0a1;
+	font-size: 1em;
+	text-align: justify;
+}
 .safari1{
 	position: absolute;
 	top: 11.5%;
