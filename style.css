@@ -323,6 +323,18 @@ img {
 	height: 11%;
 	z-index: 9;
 }
+.nom_contact{
+	position: absolute;
+	top: 15%;
+	left: 12%;
+	color: #ffffff;
+}
+.entete_contact{
+	position: absolute;
+	top: 15%;
+	left: 4%;
+	color: #cccccc;
+}
 .contact1{
 	position: absolute;
 	top: 10.5%;
@@ -342,7 +354,6 @@ img {
 	height: 2.9%;
 	font-size: 1.1em;
 	background-color: #535e67;
-	border-bottom: 1px solid #63696b;
 	z-index: 99999;
 }
 .contact3{
@@ -353,7 +364,6 @@ img {
 	height: 2.9%;
 	font-size: 1.1em;
 	background-color: #535e67;
-	border-bottom: 1px solid #63696b;
 	z-index: 99999;
 }
 .contact4{
@@ -364,7 +374,6 @@ img {
 	height: 2.9%;
 	font-size: 1.1em;
 	background-color: #535e67;
-	border-bottom: 1px solid #63696b;
 	z-index: 99999;
 }
 .contact5{
@@ -386,7 +395,6 @@ img {
 	height: 2.9%;
 	font-size: 1.1em;
 	background-color: #535e67;
-	border-bottom: 1px solid #63696b;
 	z-index: 99999;
 }
 .contact7{
@@ -397,7 +405,6 @@ img {
 	height: 2.9%;
 	font-size: 1.1em;
 	background-color: #535e67;
-	border-bottom: 1px solid #63696b;
 	z-index: 99999;
 }
 .contact8{
@@ -408,7 +415,6 @@ img {
 	height: 2.9%;
 	font-size: 1.1em;
 	background-color: #535e67;
-	border-bottom: 1px solid #63696b;
 	z-index: 99999;
 }
 .contact9{
@@ -419,7 +425,6 @@ img {
 	height: 2.9%;
 	font-size: 1.1em;
 	background-color: #535e67;
-	border-bottom: 1px solid #63696b;
 	z-index: 99999;
 }
 .contact10{
@@ -441,7 +446,6 @@ img {
 	height: 2.9%;
 	font-size: 1.1em;
 	background-color: #535e67;
-	border-bottom: 1px solid #63696b;
 	z-index: 99999;
 }
 .contact12{
@@ -452,7 +456,6 @@ img {
 	height: 2.9%;
 	font-size: 1.1em;
 	background-color: #535e67;
-	border-bottom: 1px solid #63696b;
 	z-index: 99999;
 }
 .contact13{
@@ -463,7 +466,6 @@ img {
 	height: 2.9%;
 	font-size: 1.1em;
 	background-color: #535e67;
-	border-bottom: 1px solid #63696b;
 	z-index: 99999;
 }
 .contact14{
@@ -474,7 +476,6 @@ img {
 	height: 2.9%;
 	font-size: 1.1em;
 	background-color: #535e67;
-	border-bottom: 1px solid #63696b;
 	z-index: 99999;
 }
 .contact15{
@@ -485,7 +486,6 @@ img {
 	height: 2.9%;
 	font-size: 1.1em;
 	background-color: #535e67;
-	border-bottom: 1px solid #63696b;
 	z-index: 99999;
 }
 .contact16{
@@ -496,7 +496,6 @@ img {
 	height: 2.9%;
 	font-size: 1.1em;
 	background-color: #535e67;
-	border-bottom: 1px solid #63696b;
 	z-index: 99999;
 }
 .contact17{
@@ -507,7 +506,6 @@ img {
 	height: 2.9%;
 	font-size: 1.1em;
 	background-color: #535e67;
-	border-bottom: 1px solid #63696b;
 	z-index: 99999;
 }
 .contact18{
@@ -518,7 +516,6 @@ img {
 	height: 2.9%;
 	font-size: 1.1em;
 	background-color: #535e67;
-	border-bottom: 1px solid #63696b;
 	z-index: 99999;
 }
 .contact19{
@@ -540,7 +537,6 @@ img {
 	height: 2.9%;
 	font-size: 1.1em;
 	background-color: #535e67;
-	border-bottom: 1px solid #63696b;
 	z-index: 99999;
 }
 .contact21{
@@ -551,7 +547,6 @@ img {
 	height: 2.9%;
 	font-size: 1.1em;
 	background-color: #535e67;
-	border-bottom: 1px solid #63696b;
 	z-index: 99999;
 }
 .contact22{
@@ -562,7 +557,6 @@ img {
 	height: 2.9%;
 	font-size: 1.1em;
 	background-color: #535e67;
-	border-bottom: 1px solid #63696b;
 	z-index: 99999;
 }
 .contact23{
@@ -584,7 +578,6 @@ img {
 	height: 2.9%;
 	font-size: 1.1em;
 	background-color: #535e67;
-	border-bottom: 1px solid #63696b;
 	z-index: 99999;
 }
 .contact25{
@@ -606,7 +599,6 @@ img {
 	height: 2.9%;
 	font-size: 1.1em;
 	background-color: #535e67;
-	border-bottom: 1px solid #63696b;
 	z-index: 99999;
 }
 .contact27{
@@ -617,7 +609,6 @@ img {
 	height: 2.9%;
 	font-size: 1.1em;
 	background-color: #535e67;
-	border-bottom: 1px solid #63696b;
 	z-index: 99999;
 }
 .mail-container{
