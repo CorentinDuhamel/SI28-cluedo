@@ -26,6 +26,8 @@ $(function() {
 
     $(".click-dock").click(clickDock)
 
+    $(".clue").click(registerClue)
+
     $(".off-menu-click").click(function() { $(".off-menu").toggle() })
     $(".stop").click(function() {
         $(".off-menu").toggle()
