@@ -667,11 +667,19 @@ img {
 }
 .contenusafari{
 	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.image_safari{
+	position: absolute;
 	top: 6.7%;
 	left: 0%;
 	width: 100%;
-	z-index: 99;
+	height: 93.3%;
+	overflow: auto;
 	display: none;
+	z-index: 99;
 }
 .msg{
 	font-size: 1.2em;
