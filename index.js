@@ -248,7 +248,7 @@ function stopCumputer() {
     let found_causes = []
 
     for (const game_end of game_ends) {
-        if (game_end.indices === [])
+        if (game_end.indices.length == 0)
             found_causes.push(game_end)
         else 
             if (match_indices(game_end.indices))
@@ -262,10 +262,12 @@ function displayCauses(found_causes) {
     let keys = new Set()
 
     for (const cause of found_causes) {
-        keys.add(found_causes.key)
+        keys.add(cause.key)
     }
 
     $("#endgame").show()
+
+    autoType(".type-cause", 100)
 
     $("#endgame input").each(function() {
         if (keys.has($(this).attr("data-key")))
