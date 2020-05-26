@@ -1161,7 +1161,6 @@ a.dock-item2 {
 	z-index: 999999;
 	top: 0;
 	left: 12px;
-	cursor: pointer;
 }
 
 .off-menu img {
@@ -1175,6 +1174,7 @@ a.dock-item2 {
 	height: 30px;
 	top: 0;
 	left: 12px;
+	cursor: pointer;
 }
 
 .stop {
