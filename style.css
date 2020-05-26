@@ -690,12 +690,12 @@ img {
 	top: 3px;
 	margin-bottom: 8px;
 	margin-left: 250px;
-	float: right;
+	float: left;
 	min-width: 43;
 	min-height: 70;
 	max-width: 350px;
 	border-radius: 13px;
-	text-align: right;
+	text-align: left;
 	background-color: #0364d5;
 	color: #ffffff;
 	font-size: 1.4em;
