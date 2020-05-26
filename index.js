@@ -153,6 +153,12 @@ function displaybutton(){
     }, 53000); // How long do you want the delay to be (in milliseconds)? 
 }
 
+function back_safari(){
+    for (let i = 1; i <= 22; i++) {
+        $("#contenusafari" + i).hide()
+    }
+}
+
 function startgame(){
     $("#intro").hide()
 }
