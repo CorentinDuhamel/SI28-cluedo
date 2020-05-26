@@ -163,6 +163,19 @@ img {
 	font-size: 1em;
 	text-align: justify;
 }
+.back{
+	position: absolute;
+	top: 3.2%;
+	left: 5.3%;
+	width: 1.9%;
+	height: 2.9%;
+	font-weight: lighter;
+	text-align: center;
+	color: #eeeeee;
+	font-size: 2em;
+	opacity: 0.7;
+	font-stretch: condensed;
+}
 .safari1{
 	position: absolute;
 	top: 11.5%;
