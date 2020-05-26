@@ -153,6 +153,7 @@ img {
 	color: #9fa0a1;
 	font-size: 1em;
 	text-align: right;
+	font-weight: lighter;
 }
 .intro_mail{
 	position: absolute;
@@ -162,6 +163,7 @@ img {
 	color: #9fa0a1;
 	font-size: 1em;
 	text-align: justify;
+	font-weight: lighter;
 }
 .back{
 	position: absolute;
