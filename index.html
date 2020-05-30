@@ -31,13 +31,13 @@
 			<div class="type-cause headline">
 				<h1 class="text-js">Avec tout ce que je viens de voir, qu’est-ce que je peux en déduire ?</h1>
 			</div>
-			<input type="button" class="endgamebutton" data-key="d" onclick="choosen_end(3)" value="Flint a entraîné Rose en eaux troubles, je dois le dénoncer à la police">
-			<input type="button" class="endgamebutton" data-key="f" onclick="choosen_end(5)" value="Millie, ma nièce est atteinte d’une maladie rare et les traitements coûtent chers. Rose a dû arnaquer un certain M. Durand&#x00A; pour pouvoir les payer, puis se cacher dans l'hôtel qu’elle a réservé pour éviter les représailles. Je devrais&#x00A; m’y rendre pour vérifier qu’elle va bien et voir comment l’aider.">
-			<input type="button" class="endgamebutton" data-key="c" onclick="choosen_end(2)" value="Rose à déménagé avec Pansy et à coupé les ponts avec la famille après une énième dispute avec notre mère. Je vais essayer &#x00A;des les recontacter.">
-			<input type="button" class="endgamebutton" data-key="g" onclick="choosen_end(6)" value="Millie, ma nièce est atteinte d’une maladie rare et les traitements coûtent chers. Rose a dû arnaquer un certain M. Durand&#x00A; pour pouvoir les payer, puis se cacher dans l'hôtel qu’elle a réservé pour éviter les représailles. Mais elle &#x00A;ignore que M. Durand l’a retrouvée et lui a lancé un ultimatum. Je dois la prévenir&#x00A; immédiatement de s’enfuir, je pourrais surement la contacter via la réception de l’hôtel.">
-			<input type="button" class="endgamebutton" data-key="a" onclick="choosen_end(0)" value="La fouille de l’ordinateur ne m’a rien appris, je dois compter sur la police">
-			<input type="button" class="endgamebutton" data-key="b" onclick="choosen_end(1)" value="Rose trompe Pansy avec Flint, je dois contacter Flint.">
-			<input type="button" class="endgamebutton" data-key="e" onclick="choosen_end(4)" value="Millie, ma nièce est atteinte d’une maladie rare et les traitements coûtent chers. Rose a dû arnaquer un certain M. Durand&#x00A; pour pouvoir les payer, mais on dirait qu’il s’agit d’une qu’il est dangereux de contrarier. Je devrais parler&#x00A; à la police de ce M. Durand.">
+			<button class="endgamebutton" data-key="d" onclick="choosen_end(3)">Flint a entraîné Rose en eaux troubles, je dois le dénoncer à la police</button>
+			<button class="endgamebutton" data-key="f" onclick="choosen_end(5)">Millie, ma nièce est atteinte d’une maladie rare et les traitements coûtent chers. Rose a dû arnaquer un certain M. Durand<br> pour pouvoir les payer, puis se cacher dans l'hôtel qu’elle a réservé pour éviter les représailles. Je devrais<br> m’y rendre pour vérifier qu’elle va bien et voir comment l’aider.</button>
+			<button class="endgamebutton" data-key="c" onclick="choosen_end(2)">Rose à déménagé avec Pansy et à coupé les ponts avec la famille après une énième dispute avec notre mère. Je vais essayer <br>des les recontacter.</button>
+			<button class="endgamebutton" data-key="g" onclick="choosen_end(6)">Millie, ma nièce est atteinte d’une maladie rare et les traitements coûtent chers. Rose a dû arnaquer un certain M. Durand<br> pour pouvoir les payer, puis se cacher dans l'hôtel qu’elle a réservé pour éviter les représailles. Mais elle <br>ignore que M. Durand l’a retrouvée et lui a lancé un ultimatum. Je dois la prévenir<br> immédiatement de s’enfuir, je pourrais surement la contacter via la réception de l’hôtel.</button>
+			<button class="endgamebutton" data-key="a" onclick="choosen_end(0)">La fouille de l’ordinateur ne m’a rien appris, je dois compter sur la police</button>
+			<button class="endgamebutton" data-key="b" onclick="choosen_end(1)">Rose trompe Pansy avec Flint, je dois contacter Flint.</button>
+			<button class="endgamebutton" data-key="e" onclick="choosen_end(4)">Millie, ma nièce est atteinte d’une maladie rare et les traitements coûtent chers. Rose a dû arnaquer un certain M. Durand<br> pour pouvoir les payer, mais on dirait qu’il s’agit d’une qu’il est dangereux de contrarier. Je devrais parler<br> à la police de ce M. Durand.</button>
 		</div>
 
 		<div class="lasttext" id="lasttext">
@@ -349,7 +349,7 @@
 		
 		<div id="message" class="message-container">
 			<img class="message" src="images/messages2.png" alt="message">
-			<div data-message-id="1" class="msg message1 clue" attr-clue="pansy_msg">Pansy</div>
+			<div data-message-id="1" class="msg message1">Pansy</div>
 			<div data-message-id="2" class="msg message2">Marc</div>
 			<div data-message-id="3" class="msg message3 clue" attr-clue="durand_msg">M. Durand</div>
 			<div data-message-id="4" class="msg message4 clue" attr-clue="mother_msg">Maman</div>
@@ -526,7 +526,7 @@
 				<a id="mail-dock" class="click-dock dock-item2" href="#"><span>Mail</span><img src="images/email.png" alt="music" /></a> 
 				<a id="calendrier-dock" class="click-dock dock-item2" href="#"><span>Calendrier</span><img src="images/calendar.png" alt="video" /></a> 
 				<a id="photos-dock" class="click-dock dock-item2" href="#"><span>Photos</span><img src="images/photos.png" alt="history" /></a> 
-				<a id="message-dock" class="click-dock dock-item2" href="#"><span>Messages</span><img src="images/messages.png" alt="calendar" /></a> 
+				<a id="message-dock" class="click-dock dock-item2 clue" href="#" attr-clue="pansy_msg"><span>Messages</span><img src="images/messages.png" alt="calendar" /></a> 
 				<a id="facetime-dock" class="click-dock dock-item2" href="#"><span>Facetime</span><img src="images/facetime.png" alt="links" /></a> 
 			</div>
 		</div>
