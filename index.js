@@ -275,7 +275,7 @@ function displayCauses(found_causes) {
 
     autoType(".type-cause", 100)
 
-    $("#endgame input").each(function() {
+    $("#endgame button").each(function() {
         if (keys.has($(this).attr("data-key")))
             $(this).show()
     })

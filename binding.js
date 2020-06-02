@@ -2,7 +2,7 @@ $(window).on("load", displaybutton)
 
 $(function() {
     $("#endgame").hide()
-    $("#endgame input").hide()
+    $("#endgame button").hide()
     $("#lasttext").hide()
     $(".off-menu").hide()
     $(".shutdown").hide()
