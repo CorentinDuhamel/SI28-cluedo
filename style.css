@@ -1311,6 +1311,36 @@ div.mail {
 	height: 1.9%;
 }
 
+.closecontact {
+	position: absolute;
+	top: 0.76%;
+	left: 1.2%;
+	width: 2.5%;
+	display: none;
+}
+.reducecontact {
+	position: absolute;
+	top: 0.76%;
+	left: 4.6%;
+	width: 2.5%;
+	display: none;
+}
+.extendcontact {
+	position: absolute;
+	top: 0.76%;
+	left: 8%;
+	width: 2.5%;
+	display: none;
+}
+
+.buttoncontact{
+	position: absolute;
+	top: 0.96%;
+	left: 1.37%;
+	width: 9%;
+	height: 2%;
+}
+
 #calendar-content {
 	position: absolute;
 	top: 5.4%;
