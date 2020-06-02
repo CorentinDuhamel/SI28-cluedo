@@ -70,6 +70,7 @@ function couleurmessage(){
     $(".msg").css({"backgroundColor" : "#353f4a"})
     n = $(this).attr("data-message-id")
     $(this).css({"backgroundColor" : "#0068e1"});
+    $("#message-destinataire").text($(this).text())
     $('#contenumessage' + n).show()
 }
 

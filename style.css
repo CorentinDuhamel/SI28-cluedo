@@ -1258,3 +1258,10 @@ a.dock-item2 {
 .eteindre {
 	left: 598px;
 }
+
+#message-destinataire {
+	position: absolute;
+	top: 9.9%;
+	left: 40%;
+	font-weight: normal;
+}
