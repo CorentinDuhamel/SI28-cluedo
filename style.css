@@ -701,6 +701,11 @@ img {
 	font-weight: bold;
 	color: #ffffff;
 }
+.msg-title{
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #ffffff;
+}
 .messageenvoye{
 	position: relative;
 	top: 3px;
@@ -1268,4 +1273,10 @@ a.dock-item2 {
 
 div.mail {
 	cursor: pointer;
+}
+
+.msg-center {
+	font-size: 3em;
+	text-align: center;
+	line-height: 71px;
 }
