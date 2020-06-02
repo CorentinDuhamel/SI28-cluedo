@@ -72,6 +72,7 @@ img {
 	display: flex;
 	margin: auto;
 	margin-top: 10px;
+	cursor: pointer;
 }
 .type-cause {
 	width: 100%;
@@ -1175,29 +1176,29 @@ a.dock-item2 {
 	position: absolute;
 	z-index: 999999;
 	top: 0;
-	left: 12px;
+	left: 8px;
 }
 
 .off-menu img {
-	width: 80%;
+	width: 64%;
 }
 
 .off-menu-click {
 	position: absolute;
 	z-index: 9999999999999999; /* way too overkill */
-	width: 50px;
-	height: 30px;
+	width: 38px;
+	height: 22px;
 	top: 0;
-	left: 12px;
+	left: 8px;
 	cursor: pointer;
 }
 
 .stop {
 	position: absolute;
-	top: 210px;
+	top: 167px;
 	left: 0;
-	width: 439px;
-	height: 150px;
+	width: 351px;
+	height: 120px;
 	cursor: pointer;
 }
 
