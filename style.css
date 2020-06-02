@@ -1280,3 +1280,41 @@ div.mail {
 	text-align: center;
 	line-height: 71px;
 }
+
+.closecalendrier {
+	position: absolute;
+	top: 1.6%;
+	left: 1.2%;
+	width: 1.8%;
+	display: none;
+}
+.reducecalendrier {
+	position: absolute;
+	top: 1.6%;
+	left: 3.28%;
+	width: 1.8%;
+	display: none;
+}
+.extendcalendrier {
+	position: absolute;
+	top: 1.6%;
+	left: 5.5%;
+	width: 1.8%;
+	display: none;
+}
+
+.buttoncalendrier{
+	position: absolute;
+	top: 1.78%;
+	left: 1.37%;
+	width: 5.75%;
+	height: 1.9%;
+}
+
+#calendar-content {
+	position: absolute;
+	top: 5.4%;
+	left: 0;
+	height: 77.6%;
+	width: 100%;
+}

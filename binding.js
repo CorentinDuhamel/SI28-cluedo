@@ -7,7 +7,7 @@ $(function() {
     $(".off-menu").hide()
     $(".shutdown").hide()
 
-    btn_names = ["buttonsafari", "buttonfacetime", "buttonmail", "buttonmessage", "buttonphotos"]
+    btn_names = ["buttonsafari", "buttonfacetime", "buttonmail", "buttonmessage", "buttonphotos", "buttoncalendrier"]
     for(let btn_name of btn_names) {
         $("#" + btn_name).click(clickCacher)
         $("#" + btn_name).mouseout(toggleBoutons)
