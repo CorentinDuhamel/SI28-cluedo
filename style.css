@@ -1265,3 +1265,7 @@ a.dock-item2 {
 	left: 40%;
 	font-weight: normal;
 }
+
+div.mail {
+	cursor: pointer;
+}
