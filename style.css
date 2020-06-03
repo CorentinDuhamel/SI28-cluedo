@@ -96,6 +96,12 @@ img {
 	color: #dddddd;
 	font-size: 3em;
 }
+
+.type-js{
+	text-align : justify;
+	text-align-last : center;
+}
+
 .element8{
 	position: absolute;
 	top: 24%;
