@@ -293,7 +293,7 @@ img {
 }
 .safari15{
 	position: absolute;
-	top: 44.1%;
+	top: 44.1%
 	left: 42.3%;
 	width: 5.5%;
 	height: 11%;
@@ -734,6 +734,24 @@ img {
 	max-width: 350px;
 	border-radius: 13px;
 	background-color: #565554;
+	color: #ffffff;
+	font-size: 1.4em;
+	display: block;
+	padding: 4px 8px 6px 8px;
+}
+.messageblocage{
+	position: relative;
+	top: 3px;
+	margin-bottom: 8px;
+	margin-left: 250px;
+	float: right;
+	min-width: 43;
+	min-height: 70;
+	max-width: 500px;
+	border-radius: 13px;
+	text-align: center;
+	font-style : italic;
+	background-color: #777777;
 	color: #ffffff;
 	font-size: 1.4em;
 	display: block;
