@@ -172,6 +172,7 @@ function startgame(){
     audio.addEventListener('ended', function () {
         i = ++i < playlist.length ? i : 0;
         console.log(i)
+        audio.volume = 0.5;
         audio.src = playlist[i];
         audio.play();
     }, true);
