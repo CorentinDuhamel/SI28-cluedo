@@ -739,6 +739,24 @@ img {
 	display: block;
 	padding: 4px 8px 6px 8px;
 }
+.messageblocage{
+	position: relative;
+	top: 3px;
+	margin-bottom: 8px;
+	margin-left: 250px;
+	float: right;
+	min-width: 43;
+	min-height: 70;
+	max-width: 500px;
+	border-radius: 13px;
+	text-align: center;
+	font-style : italic;
+	background-color: #777777;
+	color: #ffffff;
+	font-size: 1.4em;
+	display: block;
+	padding: 4px 8px 6px 8px;
+}
 .mail{
 	position: absolute;
 	top: 0.48%;
