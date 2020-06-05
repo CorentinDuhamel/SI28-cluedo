@@ -187,12 +187,13 @@ img {
 }
 .safari1{
 	position: absolute;
-	top: 13%;
+	top: 14%;
 	left: 21.5%;
 	width: 5.5%;
 	height: 11%;
 	z-index: 9;
 	background-color: red;
+	opacity: 0.6;
 }
 .safari2{
 	position: absolute;
@@ -233,7 +234,6 @@ img {
 	width: 5.5%;
 	height: 11%;
 	z-index: 9;
-	background-color: red;
 }
 .safari7{
 	position: absolute;
@@ -243,6 +243,7 @@ img {
 	height: 11%;
 	z-index: 9;
 	background-color: red;
+	opacity: 0.6;
 }
 .safari8{
 	position: absolute;
@@ -292,6 +293,7 @@ img {
 	height: 11%;
 	z-index: 9;
 	background-color: red;
+	opacity: 0.6;
 }
 .safari14{
 	position: absolute;
@@ -349,6 +351,7 @@ img {
 	height: 11%;
 	z-index: 9;
 	background-color: red;
+	opacity: 0.6;
 }
 .safari21{
 	position: absolute;
