@@ -132,8 +132,42 @@ function showPane(pane_name) {
     }
 }
 
+var messageUnlocked = false, mailUnlocked = false
+
 function clickDock(){
-    showPane($(this).attr('id').split('-')[0])
+    switch ($(this).attr('id').split('-')[0]) {
+        case "message":
+            if (messageUnlocked) {
+                showPane($(this).attr('id').split('-')[0])
+            }
+            else {
+                let code = prompt("Quel est le mot de passe ?")
+                if (code == "07042015") {
+                    messageUnlocked = true;
+                    showPane($(this).attr('id').split('-')[0])
+                } else {
+                    alert("Code erroné.")
+                }
+            }
+            break;
+        case "mail":
+            if (mailUnlocked) {
+                showPane($(this).attr('id').split('-')[0])
+            }
+            else {
+                let code = prompt("Quel est le nom de votre premier animal de compagnie ?")
+                if (code.toLowerCase() == "laika") {
+                    mailUnlocked = true;
+                    showPane($(this).attr('id').split('-')[0])
+                } else {
+                    alert("Accès refusé.")
+                }
+            }
+            break;
+        default:
+            showPane($(this).attr('id').split('-')[0])
+            break;
+    }
 }
 
 function clickCacher(){
