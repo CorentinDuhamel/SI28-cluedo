@@ -1,4 +1,4 @@
-$(window).on("load", displaybutton)
+// $(window).on("load", displaybutton)
 
 $(function() {
     $("#endgame").hide()

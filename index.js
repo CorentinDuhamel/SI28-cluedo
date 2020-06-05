@@ -147,12 +147,12 @@ function toggleBoutons() {
     $("#close" + pane_id).toggle()
 }
 
-function displaybutton(){
-    $("#startgame").hide()
-    setTimeout(function (){
-        $("#startgame").show()
-    }, 53000); // How long do you want the delay to be (in milliseconds)? 
-}
+// function displaybutton(){
+//     $("#startgame").hide()
+//     setTimeout(function (){
+//         $("#startgame").show()
+//     }, 53000); // How long do you want the delay to be (in milliseconds)? 
+// }
 
 function back_safari(){
     for (let i = 1; i <= 22; i++) {
@@ -162,6 +162,23 @@ function back_safari(){
 
 function startgame(){
     $("#intro").hide()
+
+    var audio = new Audio(),
+    i = 0;
+    var playlist = new Array('music/p1.mp3', 'music/p2.mp3', 'music/p3.mp3',
+                            'music/p4.mp3', 'music/p5.mp3', 'music/p6.mp3',
+                            'music/p7.mp3', 'music/p8.mp3', 'music/p9.mp3');
+
+    audio.addEventListener('ended', function () {
+        i = ++i < playlist.length ? i : 0;
+        console.log(i)
+        audio.src = playlist[i];
+        audio.play();
+    }, true);
+    audio.volume = 0.3;
+    audio.loop = false;
+    audio.src = playlist[0];
+    audio.play();
 }
 
 // Set constraints for the video stream
