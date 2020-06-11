@@ -115,7 +115,7 @@ function cachersite(){
 }
 
 function showPane(pane_name) {
-    pane_list = ['mail', 'safari', 'facetime', 'message', 'photos', 'contact', 'calendrier']
+    pane_list = ['mail', 'safari', 'facetime', 'message', 'photos', 'contact', 'calendrier', 'finder']
 
     for (const pane of pane_list) {
         pane === pane_name ? $("#" + pane).show() : $("#" + pane).hide()
