@@ -123,7 +123,9 @@ img {
 .safari-container{
 	display: none;
 }
-
+.finder-container{
+	display: none;
+}
 .safari_accueil{
 	position: absolute;
 	top: 0;
