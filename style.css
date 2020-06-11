@@ -126,6 +126,12 @@ img {
 .finder-container{
 	display: none;
 }
+.finder_accueil{
+	position: absolute;
+	top: 20%;
+	left: 21%;
+	width: 55%;
+}
 .safari_accueil{
 	position: absolute;
 	top: 0;
