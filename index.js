@@ -74,6 +74,39 @@ function couleurmessage(){
     $('#contenumessage' + n).show()
 }
 
+function cacherfinder(){
+    for (let i = 1; i <= 9; i++) {
+        $("#finder" + i).hide()
+    }
+}
+function afficherFinder1(){
+    $("#finder1").show()
+}
+function afficherFinder2(){
+    $("#finder2").show()
+}
+function afficherFinder3(){
+    $("#finder3").show()
+}
+function afficherFinder4(){
+    $("#finder4").show()
+}
+function afficherFinder5(){
+    $("#finder5").show()
+}
+function afficherFinder6(){
+    $("#finder6").show()
+}
+function afficherFinder7(){
+    $("#finder7").show()
+}
+function afficherFinder8(){
+    $("#finder8").show()
+}
+function afficherFinder9(){
+    $("#finder9").show()
+}
+
 function couleurmail(){
     for (let i = 1; i <= 10; i++) {
         $("mail" + i).css("backgroundColor", "#353f4a")
