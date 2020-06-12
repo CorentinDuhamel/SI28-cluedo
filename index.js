@@ -78,7 +78,6 @@ function cacherfinder(num){
         $("#finder" + num).hide()
 }
 
-}
 function afficherFinder1(){
     $("#finder1").show()
 }
