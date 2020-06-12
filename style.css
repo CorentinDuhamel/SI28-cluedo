@@ -59,6 +59,7 @@ img {
 	font-weight: bold;
 	border-radius: 30px;
 	border: none;
+	cursor : pointer;
 }
 
 .endgamebutton{
@@ -74,6 +75,7 @@ img {
 	margin-top: 10px;
 	cursor: pointer;
 	padding : 20px;
+	cursor : pointer;
 }
 .type-cause {
 	width: 100%;
@@ -138,6 +140,7 @@ img {
 	left: 35%;
 	width: 7.8%;
 	height: 10.5%;
+	cursor : pointer;
 }
 .finderdiv2{
 	position: absolute;
@@ -145,6 +148,7 @@ img {
 	left: 43.5%;
 	width: 7%;
 	height: 10.5%;
+	cursor : pointer;
 }
 .finderdiv3{
 	position: absolute;
@@ -152,6 +156,7 @@ img {
 	left: 51.5%;
 	width: 7.2%;
 	height: 12%;
+	cursor : pointer;
 }
 .finderdiv4{
 	position: absolute;
@@ -159,6 +164,7 @@ img {
 	left: 59.5%;
 	width: 7.5%;
 	height: 10.5%;
+	cursor : pointer;
 }
 .finderdiv5{
 	position: absolute;
@@ -166,6 +172,7 @@ img {
 	left: 67.7%;
 	width: 7.5%;
 	height: 12.2%;
+	cursor : pointer;
 }
 .finderdiv6{
 	position: absolute;
@@ -173,6 +180,7 @@ img {
 	left: 35%;
 	width: 7.8%;
 	height: 12.5%;
+	cursor : pointer;
 }
 .finderdiv7{
 	position: absolute;
@@ -180,6 +188,7 @@ img {
 	left: 43.6%;
 	width: 6.9%;
 	height: 10.8%;
+	cursor : pointer;
 }
 .finderdiv8{
 	position: absolute;
@@ -187,6 +196,7 @@ img {
 	left: 51.6%;
 	width: 7.3%;
 	height: 10.8%;
+	cursor : pointer;
 }
 .finderdiv9{
 	position: absolute;
@@ -194,6 +204,7 @@ img {
 	left: 59.4%;
 	width: 7.8%;
 	height: 10.5%;
+	cursor : pointer;
 }
 .headerpdf{
 	position: absolute;
@@ -207,6 +218,7 @@ img {
 	left: 20%;
 	width: 40%;
 	display: none;
+	cursor : pointer;
 }
 .finder2{
 	position: absolute;
@@ -214,6 +226,7 @@ img {
 	left: 25%;
 	width: 40%;
 	display: none;
+	cursor : pointer;
 }
 .finder3{
 	position: absolute;
@@ -222,6 +235,7 @@ img {
 	width: 40%;
 	height: 80%;
 	display: none;
+	cursor : pointer;
 }
 .finder4{
 	position: absolute;
@@ -230,6 +244,7 @@ img {
 	width: 40%;
 	height: 95%;
 	display: none;
+	cursor : pointer;
 }
 .finder5{
 	position: absolute;
@@ -237,6 +252,7 @@ img {
 	left: 29%;
 	width: 35%;
 	display: none;
+	cursor : pointer;
 }
 .finder6{
 	position: absolute;
@@ -245,6 +261,7 @@ img {
 	width: 40%;
 	height: 95%;
 	display: none;
+	cursor : pointer;
 }
 .finder7{
 	position: absolute;
@@ -252,6 +269,7 @@ img {
 	left: 20%;
 	width: 45%;
 	display: none;
+	cursor : pointer;
 }
 .finder8{
 	position: absolute;
@@ -260,6 +278,7 @@ img {
 	width: 40%;
 	height: 80%;
 	display: none;
+	cursor : pointer;
 }
 .finder9{
 	position: absolute;
@@ -267,6 +286,7 @@ img {
 	left: 23%;
 	width: 40%;
 	display: none;
+	cursor : pointer;
 }
 .safari_accueil{
 	position: absolute;
@@ -329,6 +349,7 @@ img {
 	font-size: 2em;
 	opacity: 0.7;
 	font-stretch: condensed;
+	cursor : pointer;
 }
 .safari1{
 	position: absolute;
@@ -337,6 +358,7 @@ img {
 	width: 5.5%;
 	height: 11%;
 	z-index: 9;
+	cursor : pointer;
 }
 .safari2{
 	position: absolute;
@@ -345,6 +367,7 @@ img {
 	width: 5.5%;
 	height: 11%;
 	z-index: 9;
+	cursor : pointer;
 }
 .safari3{
 	position: absolute;
@@ -353,6 +376,7 @@ img {
 	width: 5.5%;
 	height: 11%;
 	z-index: 9;
+	cursor : pointer;
 }
 .safari4{
 	position: absolute;
@@ -361,6 +385,7 @@ img {
 	width: 5.5%;
 	height: 11%;
 	z-index: 9;
+	cursor : pointer;
 }
 .safari5{
 	position: absolute;
@@ -369,6 +394,7 @@ img {
 	width: 5.5%;
 	height: 11%;
 	z-index: 9;
+	cursor : pointer;
 }
 .safari6{
 	position: absolute;
@@ -377,6 +403,7 @@ img {
 	width: 5.5%;
 	height: 11%;
 	z-index: 9;
+	cursor : pointer;
 }
 .safari7{
 	position: absolute;
@@ -385,6 +412,7 @@ img {
 	width: 5.5%;
 	height: 11%;
 	z-index: 9;
+	cursor : pointer;
 }
 .safari8{
 	position: absolute;
@@ -393,6 +421,7 @@ img {
 	width: 5.5%;
 	height: 11%;
 	z-index: 9;
+	cursor : pointer;
 }
 .safari9{
 	position: absolute;
@@ -401,6 +430,7 @@ img {
 	width: 5.5%;
 	height: 11%;
 	z-index: 9;
+	cursor : pointer;
 }
 .safari10{
 	position: absolute;
@@ -409,6 +439,7 @@ img {
 	width: 5.5%;
 	height: 11%;
 	z-index: 9;
+	cursor : pointer;
 }
 .safari11{
 	position: absolute;
@@ -417,6 +448,7 @@ img {
 	width: 5.5%;
 	height: 11%;
 	z-index: 9;
+	cursor : pointer;
 }
 .safari12{
 	position: absolute;
@@ -425,6 +457,7 @@ img {
 	width: 5.5%;
 	height: 11%;
 	z-index: 9;
+	cursor : pointer;
 }
 .safari13{
 	position: absolute;
@@ -433,6 +466,7 @@ img {
 	width: 5.5%;
 	height: 11%;
 	z-index: 9;
+	cursor : pointer;
 }
 .safari14{
 	position: absolute;
@@ -441,6 +475,7 @@ img {
 	width: 5.5%;
 	height: 11%;
 	z-index: 9;
+	cursor : pointer;
 }
 .safari15{
 	position: absolute;
@@ -449,6 +484,7 @@ img {
 	width: 5.5%;
 	height: 11%;
 	z-index: 9;
+	cursor : pointer;
 }
 .safari16{
 	position: absolute;
@@ -457,6 +493,7 @@ img {
 	width: 5.5%;
 	height: 11%;
 	z-index: 9;
+	cursor : pointer;
 }
 .safari17{
 	position: absolute;
@@ -465,6 +502,7 @@ img {
 	width: 5.5%;
 	height: 11%;
 	z-index: 9;
+	cursor : pointer;
 }
 .safari18{
 	position: absolute;
@@ -473,6 +511,7 @@ img {
 	width: 5.5%;
 	height: 11%;
 	z-index: 9;
+	cursor : pointer;
 }
 .safari19{
 	position: absolute;
@@ -481,6 +520,7 @@ img {
 	width: 5.5%;
 	height: 11%;
 	z-index: 9;
+	cursor : pointer;
 }
 .safari20{
 	position: absolute;
@@ -489,6 +529,7 @@ img {
 	width: 5.5%;
 	height: 11%;
 	z-index: 9;
+	cursor : pointer;
 }
 .safari21{
 	position: absolute;
@@ -497,6 +538,7 @@ img {
 	width: 5.5%;
 	height: 11%;
 	z-index: 9;
+	cursor : pointer;
 }
 .safari22{
 	position: absolute;
@@ -505,12 +547,14 @@ img {
 	width: 5.5%;
 	height: 11%;
 	z-index: 9;
+	cursor : pointer;
 }
 .nom_contact{
 	position: absolute;
 	top: 15%;
 	left: 12%;
 	color: #ffffff;
+	cursor : pointer;
 }
 .entete_contact{
 	position: absolute;
@@ -854,6 +898,7 @@ img {
 	font-size: 1.2em;
 	font-weight: bold;
 	color: #ffffff;
+	cursor : pointer;
 }
 .msg-title{
 	font-size: 1.2em;
@@ -924,6 +969,7 @@ img {
 	left: 0.2%;
 	width: 4.5%;
 	height: 2.3%;
+	cursor : pointer;
 }
 .message1{
 	position: absolute;
@@ -1136,6 +1182,7 @@ img {
 	left: 19.14%;
 	width: 4.5%;
 	height: 2.3%;
+	cursor : pointer;
 }
 .facetime-container{
 	position: absolute;
@@ -1235,6 +1282,7 @@ img {
 	height: 2.9%;
 	opacity: 0.6;
 	z-index: 9999;
+	cursor : pointer;
 }
 .closesafari {
 	position: absolute;
@@ -1268,6 +1316,7 @@ img {
 	height: 2.9%;
 	opacity: 0.6;
 	z-index: 9999;
+	cursor : pointer;
 }
 .closemessage {
 	position: absolute;
@@ -1328,6 +1377,7 @@ img {
 	height: 3.3%;
 	opacity: 0.6;
 	z-index: 9999;
+	cursor : pointer;
 }
 #dock2 {
 	width: 100%;
@@ -1481,6 +1531,7 @@ div.mail {
 	left: 1.37%;
 	width: 5.75%;
 	height: 1.9%;
+	cursor : pointer;
 }
 
 .closecontact {
@@ -1511,6 +1562,7 @@ div.mail {
 	left: 1.37%;
 	width: 9%;
 	height: 2%;
+	cursor : pointer;
 }
 
 #calendar-content {
