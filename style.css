@@ -1572,3 +1572,38 @@ div.mail {
 	height: 77.6%;
 	width: 100%;
 }
+
+.closefinder {
+	position: absolute;
+	top: 20.4%;
+	left: 21.45%;
+	width: 1.2%;
+	display: none;
+	z-index: 99;
+}
+.reducefinder {
+	position: absolute;
+	top: 20.4%;
+	left: 22.87%;
+	width: 1.2%;
+	display: none;
+	z-index: 99;
+}
+.extendfinder {
+	position: absolute;
+	top: 20.4%;
+	left: 24.4%;
+	width: 1.2%;
+	display: none;
+	z-index: 99;
+}
+
+.buttonfinder{
+	position: absolute;
+	top: 20.5%;
+	left: 21.5%;
+	width: 4%;
+	height: 1.75%;
+	cursor : pointer;
+	z-index: 99;
+}
