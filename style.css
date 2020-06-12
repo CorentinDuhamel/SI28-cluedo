@@ -197,7 +197,7 @@ img {
 }
 .finder1{
 	position: absolute;
-	top: 10%;
+	top: 18%;
 	left: 20%;
 	width: 40%;
 	display: none;
@@ -205,7 +205,7 @@ img {
 .finder2{
 	position: absolute;
 	top: 10%;
-	left: 20%;
+	left: 25%;
 	width: 40%;
 	display: none;
 }
@@ -225,9 +225,9 @@ img {
 }
 .finder5{
 	position: absolute;
-	top: 10%;
-	left: 20%;
-	width: 40%;
+	top: 8%;
+	left: 29%;
+	width: 35%;
 	display: none;
 }
 .finder6{
@@ -239,9 +239,9 @@ img {
 }
 .finder7{
 	position: absolute;
-	top: 10%;
+	top: 9%;
 	left: 20%;
-	width: 40%;
+	width: 45%;
 	display: none;
 }
 .finder8{
@@ -253,8 +253,8 @@ img {
 }
 .finder9{
 	position: absolute;
-	top: 10%;
-	left: 20%;
+	top: 12%;
+	left: 23%;
 	width: 40%;
 	display: none;
 }
