@@ -111,8 +111,9 @@ function affichesite(){
     for (let i = 1; i <= 22; i++) {
         $("#contenusafari" + i).hide()
     }
-    
+
     n = $(this).attr("data-safari-id")
+    if (n==4 && !bank_unlocked) return false
     $('#contenusafari' + n).show()
 }
 
@@ -304,7 +305,21 @@ function match_indices(needed_indices) {
  * The clue have to have the class "clue" and an attribute attr-clue like this:
  *      attr-clue="clue-key"
  */
+var bank_unlocked = false
 function registerClue() {
+    if ($(this).attr("attr-clue") == "bank_account") {
+        if (!bank_unlocked) {
+            let entered_code = prompt("Quel est le mot de passe ?")
+            if (entered_code.toLowerCase() == "rosetta") {
+                bank_unlocked=true
+                $(this).click()
+            }
+            else {
+                alert("Mot de passe erroné.")
+                return false
+            }
+        }
+    }
     found_clue.add($(this).attr("attr-clue"))
 }
 
