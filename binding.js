@@ -14,6 +14,8 @@ $(function() {
         $("#" + btn_name).mouseover(toggleBoutons)
     }
     
+    $("#medic_file").click(medic_file)
+
     $("#element8").click(element8)
 
     $(".msg").click(couleurmessage)

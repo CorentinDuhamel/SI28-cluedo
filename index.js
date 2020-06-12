@@ -348,3 +348,15 @@ function choosen_end(n) {
     $("#lasttext").show()
     autoType(".type-last", 100)
 }
+
+var medic_file_unlocked = false
+function medic_file() {
+    if (medic_file_unlocked) return true
+
+    var code_entered = prompt("Quel est le mot de passe ?")
+    if (code_entered.toLowerCase() == 'la lezardiere')
+        medic_file_unlocked = true
+    else
+        alert("Mot de passe erroné.")
+    return medic_file_unlocked
+}
