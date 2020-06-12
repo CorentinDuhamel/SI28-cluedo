@@ -74,10 +74,8 @@ function couleurmessage(){
     $('#contenumessage' + n).show()
 }
 
-function cacherfinder(){
-    for (let i = 1; i <= 9; i++) {
-        $("#finder" + i).hide()
-    }
+function cacherfinder(num){
+    $("#finder" + num).hide()
 }
 
 function afficherFinder1(){
