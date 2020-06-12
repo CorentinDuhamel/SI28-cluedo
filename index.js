@@ -78,7 +78,19 @@ function cacherfinder(num){
     $("#finder" + num).hide()
 }
 
+var finder_file_unlocked = false
 function afficherFinder(num){
+    if (num == 8 || num == 9) {
+        if (!finder_file_unlocked) {
+            let code_entered = prompt("Quel est le mot de passe ?")
+            if (code_entered.toLowerCase() == "gorillaz")
+                finder_file_unlocked = true
+            else {
+                alert("Mot de passe erroné.")
+                return false
+            }
+        }
+    }
     $("#finder" + num).show()
 }
 
