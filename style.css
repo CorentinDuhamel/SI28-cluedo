@@ -1607,3 +1607,12 @@ div.mail {
 	cursor : pointer;
 	z-index: 99;
 }
+
+.contact-name {
+	position: relative;
+	color: #fff;
+	font-size: 2em;
+	z-index: 9999999;
+	left: 59%;
+	top: 7%;
+}

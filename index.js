@@ -107,16 +107,20 @@ function couleurmail(){
 }
 
 function affichecontact(){
-    for (let i = 1; i <= 28; i++) {
-        $("contact" + i).css("backgroundColor", "#353f4a")
-        $(".contact").css({"backgroundColor" : "#535e67"})
-        $("#contenucontact" + i).hide()
+    if ($(this).children().hasClass("nom_contact")) {
+        for (let i = 1; i <= 28; i++) {
+            $("contact" + i).css("backgroundColor", "#353f4a")
+            $(".contact").css({"backgroundColor" : "#535e67"})
+            $("#contenucontact" + i).hide()
+        }
+        
+        n = $(this).attr("data-contact-id")
+        $(this).css({"backgroundColor" : "#0158d0"});
+        $(this).css({"color" : "#ffffff"});
+        $('#contenucontact' + n).show()
+
+        $(".contact-name").text($(this).children().text())
     }
-    
-    n = $(this).attr("data-contact-id")
-    $(this).css({"backgroundColor" : "#0158d0"});
-    $(this).css({"color" : "#ffffff"});
-    $('#contenucontact' + n).show()
 }
 
 function affichesite(){
