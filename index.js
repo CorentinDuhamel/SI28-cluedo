@@ -167,7 +167,7 @@ function clickDock(){
             }
             else {
                 let code = prompt("Quel est le mot de passe ?")
-                if (code == "07042015") {
+                if (code == "07042015" || code == "07/04/2015" || code == "07-04-2015") {
                     messageUnlocked = true;
                     showPane($(this).attr('id').split('-')[0])
                 } else {
